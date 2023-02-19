@@ -1,0 +1,15 @@
+{{/*  Show related posts | Thanks: https://github.com/adityatelange/hugo-PaperMod/pull/1049  */}}
+
+{{ $related := first 4 (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
+{{ with $related }}
+  <div class="related">
+    <h3 class="see-also">関連記事</h3>
+    <ul>
+      {{ range . }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}

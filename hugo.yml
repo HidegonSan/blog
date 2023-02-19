@@ -1,0 +1,194 @@
+baseURL: "https://hidegonsan.github.io/blog/"
+canonifyUrls: true # サブディレクトリを使用する系ならこれが必要らしい
+
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+title: "ひでごん"
+author: "Hidegon"
+copyright: "&copy; 2023 Hidegon."
+
+theme: "PaperMod"
+paginate: 10
+
+defaultContentLanguage: "ja"
+languageCode: "ja-JP"
+hasCJKLanguage: true
+enableEmoji: true
+
+disableHugoGeneratorInject: true
+enableRobotsTXT: true
+googleAnalytics: "G-13NX4L943B"
+
+minify:
+  disableXML: true
+  #minifyOutput: true
+
+
+taxonomies:
+  category: "categories"
+  tag: "tags"
+
+
+frontMatter:
+  lastMod: ":fileModTime"
+
+
+params:
+  title: "ひでごん"
+  description: "ひでごんのブログ、備忘録です"
+  keywords: ["ひでごん", "改造", "3ds", "CTRPF", "プログラミング"]
+  classification: ["computer", "programming", "コンピュータ", "プログラミング", "改造"]
+  author: "Hidegon"
+  images: ["img/ogp.png"]
+  DateFormat: "2006-01-02"
+  locale: "ja_JP"
+
+  defaultTheme: "auto"
+  disableThemeToggle: false
+
+  env: "production"
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowRelatedContent: true
+  ShowToc: true
+  TocOpen: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  # UseHugoToc: false
+  # disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hideMeta: false
+  # hideSummary: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "favicons/favicon.ico"
+    favicon16x16: "favicons/favicon-16x16.png"
+    favicon32x32: "favicons/favicon-32x32.png"
+    apple_touch_icon: "favicons/apple-touch-icon.png"
+    safari_pinned_tab: "favicons/maskable_icon.png"
+
+  label:
+    text: "🏕️　"
+    # icon: /apple-touch-icon.png
+    # iconHeight: 35
+
+  # ホーム
+  homeInfoParams:
+    Title: "ひでごん🏕️"
+    Content: "備忘録です。書き続けられるようがんばります。"
+
+  # SNS
+  socialIcons:
+    - name: "GitHub"
+      url: "https://github.com/HidegonSan/"
+
+    - name: "GitLab"
+      url: "https://gitlab.com/Hidegon/"
+    
+    - name: "Twitter"
+      url: "https://twitter.com/Hidegon_/"
+    
+    - name: "Discord"
+      url: "https://discord.gg/Mn5EQ7qkDJ/"
+    
+    - name: "YouTube"
+      url: "https://www.youtube.com/@HidegonYT/"
+
+  # 投稿のサムネイル
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  # タイトル下部の編集提案ボタン
+  editPost:
+    URL: "https://github.com/hidegonsan/blog/blob/main/contents"
+    Text: "GitHub" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # 検索設定
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+
+menu:
+  main:
+    - identifier: "about"
+      name: "About"
+      url: "pages/about/"
+      weight: 1
+    - identifier: "posts"
+      name: "Posts"
+      url: "posts/"
+      weight: 2
+    - identifier: "tags"
+      name: "Tags"
+      url: "tags/"
+      weight: 3
+    - identifier: "search"
+      name: "　🔍　"
+      url: "search/"
+      weight: 4
+
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+
+markup:
+  highlight:
+    # noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    # anchorLineNos: true
+    style: "monokai" # https://xyproto.github.io/splash/docs/
+
+
+# 検索に必要
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+
+
+# プライバシ
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: false
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true

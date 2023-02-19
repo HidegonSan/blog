@@ -1,0 +1,12 @@
+{{/*  Open in new tab | Thanks: https://github.com/adityatelange/hugo-PaperMod/discussions/542  */}}
+{{/*  nofollow?  */}}
+
+<a
+  href="{{ .Destination | safeURL }}"
+  {{ with .Title }} title="{{ . }}"{{ end }}
+  {{ if strings.HasPrefix .Destination "http" }}
+    target="_blank" rel="noopener, noreferrer, nofollow"
+{{ end }}
+>
+  {{ .Text | safeHTML}}
+</a>
