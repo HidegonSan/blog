@@ -13,6 +13,7 @@ hugo.linux
 /.hugo_build.lock
 
 # VS Code
+.vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
