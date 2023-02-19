@@ -1,0 +1,7 @@
+User-agent: *
+Disallow:
+
+Disallow: /blog/search/
+Disallow: /blog/404.html
+
+Sitemap: https://hidegonsan.github.io/blog/sitemap.xml

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>プライバシーポリシー on ひでごん</title>
+    <link>https://hidegonsan.github.io/blog/pages/privacy-policy/</link>
+    <description>Recent content in プライバシーポリシー on ひでごん</description>
+    <image>
+      <title>ひでごん</title>
+      <url>https://hidegonsan.github.io/blog/img/ogp.png</url>
+      <link>https://hidegonsan.github.io/blog/img/ogp.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <copyright>&amp;copy; 2023 Hidegon.</copyright>
+    <lastBuildDate>Sun, 19 Feb 2023 14:00:00 +0900</lastBuildDate><atom:link href="https://hidegonsan.github.io/blog/pages/privacy-policy/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
