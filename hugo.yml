@@ -110,7 +110,7 @@ params:
 
   # タイトル下部の編集提案ボタン
   editPost:
-    URL: "https://github.com/hidegonsan/blog/blob/main/contents"
+    URL: "https://github.com/hidegonsan/blog/blob/main/content"
     Text: "GitHub" # edit text
     appendFilePath: true # to append file path to Edit link
 
