@@ -13,12 +13,12 @@
     <language>ja-JP</language>
     <copyright>&amp;copy; 2023 Hidegon.</copyright><atom:link href="https://hidegonsan.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>はじめての投稿</title>
-      <link>https://hidegonsan.github.io/blog/posts/first-post/</link>
+      <title>Hugoでブログを作った！</title>
+      <link>https://hidegonsan.github.io/blog/posts/blog-with-hugo/</link>
       <pubDate>Sun, 19 Feb 2023 15:20:29 +0900</pubDate>
       
-      <guid>https://hidegonsan.github.io/blog/posts/first-post/</guid>
-      <description>Hugo + GitHub Pages でブログを作った</description>
+      <guid>https://hidegonsan.github.io/blog/posts/blog-with-hugo/</guid>
+      <description>Hugoとは Hugoは、静的サイトジェネレーターの1つで、高速で簡単にサイトを作成できます。 公式サイト にはこう書かれています。 &amp;ldquo;</description>
     </item>
     
   </channel>
