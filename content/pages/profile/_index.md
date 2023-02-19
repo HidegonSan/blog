@@ -15,4 +15,9 @@ searchHidden: true
 ShowBreadCrumbs: false
 ---
 
-ひでごんです
+ひでごんです  
+
+[Twitter](https://twitter.com/Hidegon_/)  
+[YouTube](https://www.youtube.com/@HidegonYT/)  
+[GitHub](https://github.com/HidegonSan/)  
+[GitLab](https://gitlab.com/Hidegon/)  

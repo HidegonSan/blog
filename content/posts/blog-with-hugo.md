@@ -8,7 +8,7 @@ title: "Hugoでブログを作った！"
 description: ""
 keywords: ""
 
-tags: []
+tags: ["ブログ", "Hugo"]
 categories: []
 ---
 

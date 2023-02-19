@@ -23,7 +23,7 @@ googleAnalytics: "G-13NX4L943B"
 
 minify:
   disableXML: true
-  #minifyOutput: true
+  minifyOutput: true
 
 
 taxonomies:
@@ -83,7 +83,7 @@ params:
   # ホーム
   homeInfoParams:
     Title: "ひでごん🏕️"
-    Content: "備忘録です。書き続けられるようがんばります。"
+    Content: "備忘録です。更新がんばります。"
 
   # SNS
   socialIcons:
