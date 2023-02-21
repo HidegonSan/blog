@@ -14,14 +14,14 @@ categories: []
 
 ## Hugoとは
 
-静的サイトジェネレーターで、高速で簡単にサイトを作成できます。  
+Hugoは静的サイトジェネレーターで、高速で簡単にサイトを作成できます。  
 [公式サイト](https://gohugo.io/)にはこう書かれています。
 
 ***"ウェブサイトを構築するための世界最速のフレームワーク"***
 
 実際、ブログをビルドしてみたのですが、0.1秒もかかりませんでした。(ページが少ないのもあるけど)  
 HugoはGoで作成されているらしいです。([GitHub 組織ページ](https://github.com/gohugoio))  
-かなりたくさんのプラットフォームに対応しており、[リリースページ](https://github.com/gohugoio/hugo/releases)を見ると
+多くののプラットフォームに対応しており、[リリースページ](https://github.com/gohugoio/hugo/releases)を見ると
 
 * macOS
 * DragonFly BSD
@@ -33,12 +33,14 @@ HugoはGoで作成されているらしいです。([GitHub 組織ページ](htt
 
 に対応していました。
 しかもシングルバイナリらしいです。バイナリサイズは60MB程度でした。  
-僕はpacmanを使用してインストールしましたが、Windowsを使ってる人にはかなりありがたいと思います。  
+僕はpacmanを使用してインストールしましたが、Windowsを使ってる人にはありがたいと思います。  
 さらにGitHub Actionsも用意されていてプッシュするたびにビルド & デプロイができます。  
+このブログでもGitHub Actionsを使用してビルドを自動化しています！  
+Hugoの高速なビルドのおかげか、2000分の上限に届く気配がしません笑  
 
 ## 実際に作成してみる
 
-とりあえず[クイックスタート](https://gohugo.io/getting-started/quick-start/)読んで進めました。  
+とりあえず[クイックスタート](https://gohugo.io/getting-started/quick-start/)を読んで進めました。  
 テーマは[PaperMod](https://github.com/adityatelange/hugo-PaperMod)を使用しました。  
 選んだ理由は
 
@@ -49,8 +51,8 @@ HugoはGoで作成されているらしいです。([GitHub 組織ページ](htt
 * 軽い
 
 が大きな理由です。個人的に更新が続いていることはマストです。  
-もう1つ別のテーマの[Stack](https://github.com/CaiJimmy/hugo-theme-stack)とも迷ったんですが、公式のデモページで速度測定したところStackが大幅に負けていたのでやめました。  
-PaperModはオススメのテーマですがいくつか気に入らないところがありました。
+もう1つ別のテーマの[Stack](https://github.com/CaiJimmy/hugo-theme-stack)とも迷ったんですが、公式のデモページ同士で速度測定をしたところ、Stackが大幅に負けていたのでやめました。  
+PaperModはオススメのテーマですが、いくつか気に入らないところがありました。
 
 * ページネーションが 前/次 しかない
 * 関連記事を表示できない
@@ -60,16 +62,16 @@ PaperModはオススメのテーマですがいくつか気に入らないとこ
 これについても別の記事で書きたいと思います。  
 
 > 関連記事の表示方法を解説しました！  
-> **[PaperModで関連コンテンツを表示する方法を解説！](/posts/papermod-related/)** もぜひ確認してください！
+> **[【超簡単】PaperModで関連コンテンツを表示する方法を解説！](/posts/papermod-related/)** もぜひ確認してください！
 
 詳しい作り方は他のサイトが解説してくれているのでここでは書きません。  
-が、いくつかコケた & 更新されていた 点があるのでそれも書きます。  
+...が、いくつかコケた & 更新されていた 点があるのでそれも書きます。  
 
 ### 注意点
 
 #### 設定ファイルは `config.*` から `hugo.*` になった
 
-[ココ](https://gohugo.io/getting-started/configuration/#hugotoml-vs-configtoml)。結構最近の更新です。ほとんどのサイトが古い情報なので注意が必要です。  
+[ココ](https://gohugo.io/getting-started/configuration/#hugotoml-vs-configtoml)です。ほぼ最新の更新です。ほとんどのサイトが古い情報なので注意が必要です。  
 古いファイル名でも読みにいくらしいですが変更しておいた方が良さそうです。  
 
 #### サブディレクトリで運用する場合
