@@ -4,7 +4,7 @@ draft: true
 date: "2023-02-19T18:37:54+09:00"
 # url: ""
 
-title: "PaperModで関連コンテンツを表示する方法！"
+title: "PaperModで関連コンテンツを表示する方法を解説！"
 description: ""
 keywords: ""
 
@@ -67,7 +67,7 @@ PaperModに用意されていないかと調べていたらこんなものを見
 ```
 
 と書かれていると思います。  
-この下に呼び出すコードを書いていきます。  
+この下にテンプレートを呼び出すコードを書いていきます。  
 次のコードをコピーして38行目の下に貼り付けてください。  
 
 ```html
@@ -77,18 +77,36 @@ PaperModに用意されていないかと調べていたらこんなものを見
 {{- end }}
 ```
 
-これで呼び出すコードは終わりです。  
+これでテンプレートを呼び出すコードは終わりです。  
 
 ### 関連記事の表示を有効にする
 
 `config.yml` や `hugo.yml` などの設定ファイルに次のコードを貼り付けてください。
+自分の設定ファイルのフォーマットと同じ構成で書いてください。  
+
+YAML:
 
 ```yaml
 params:
-  ShowRelatedContent
+  ShowRelatedContent: true
 ```
 
-これはYAMLでの例です。他のフォーマットでも同じ構成で書いてください。
+TOML:
+
+```toml
+[params]
+ShowRelatedContent = true
+```
+
+JSON:
+
+```json
+{
+  "params": {
+    "ShowRelatedContent": true
+  }
+}
+```
 
 ### CSSを適用する
 
