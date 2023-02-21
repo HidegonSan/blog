@@ -76,7 +76,7 @@ params:
     safari_pinned_tab: "favicons/maskable_icon.png"
 
   label:
-    text: "🏕️　"
+    text: "🏕️ "
     # icon: /apple-touch-icon.png
     # iconHeight: 35
 
@@ -132,18 +132,22 @@ menu:
       name: "About"
       url: "pages/about/"
       weight: 1
+    - identifier: "tools"
+      name: "Tools"
+      url: "pages/tools/"
+      weight: 2
     - identifier: "posts"
       name: "Posts"
       url: "posts/"
-      weight: 2
+      weight: 3
     - identifier: "tags"
       name: "Tags"
       url: "tags/"
-      weight: 3
-    - identifier: "search"
-      name: "　🔍　"
-      url: "search/"
       weight: 4
+    - identifier: "search"
+      name: " 🔍"
+      url: "search/"
+      weight: 5
 
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
