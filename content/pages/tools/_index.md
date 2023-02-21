@@ -19,7 +19,7 @@ ShowBreadCrumbs: false
 僕が作ったツールの一覧です。  
 使ってみてください！
 
-## [OSD Designer](https://hidegonsan.github.io/tools/osd)
+## [OSD Designer](https://hidegonsan.github.io/tools/osd/)
 
 Web上でCTRPFのOSDを簡単にデザインすることのできるツールです。  
 

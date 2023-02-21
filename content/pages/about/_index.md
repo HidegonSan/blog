@@ -17,8 +17,8 @@ ShowBreadCrumbs: false
 
 このサイトはHidegonが運営している個人ブログです。  
 
-[プロフィール](/pages/profile)  
-[GitHub Repository](https://github.com/HidegonSan/blog)  
+[プロフィール](/pages/profile/)  
+[GitHub Repository](https://github.com/HidegonSan/blog/)  
 [利用規約](/pages/terms/)  
 [プライバシーポリシー](/pages/privacy-policy/)  
 <!-- [お問い合わせ](/pages/contact/)   -->
@@ -28,3 +28,5 @@ ShowBreadCrumbs: false
 [カテゴリ一覧](/categories/)  
 [アーカイブ](/archives/)  
 [検索](/search/)  
+
+[ツール一覧](/pages/tools/)
