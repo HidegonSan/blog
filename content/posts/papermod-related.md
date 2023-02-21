@@ -4,7 +4,7 @@ draft: false
 date: "2023-02-19T18:37:54+09:00"
 # url: ""
 
-title: "PaperModで関連コンテンツを表示する方法を解説！"
+title: "【超簡単】PaperModで関連コンテンツを表示する方法を解説！"
 description: ""
 keywords: ""
 
