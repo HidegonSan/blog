@@ -12,7 +12,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <copyright>&amp;copy; 2023 Hidegon.</copyright>
-    <lastBuildDate>Sun, 19 Feb 2023 15:20:29 +0900</lastBuildDate><atom:link href="https://hidegonsan.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Feb 2023 18:37:54 +0900</lastBuildDate><atom:link href="https://hidegonsan.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PaperModで関連コンテンツを表示する方法を解説！</title>
+      <link>https://hidegonsan.github.io/blog/posts/papermod-related/</link>
+      <pubDate>Sun, 19 Feb 2023 18:37:54 +0900</pubDate>
+      
+      <guid>https://hidegonsan.github.io/blog/posts/papermod-related/</guid>
+      <description>この記事ではPaperModで関連コンテンツを表示する方法について解説します！ このブログではテーマに PaperMod を使用しています。 しかし、PaperM</description>
+    </item>
+    
     <item>
       <title>Hugoでブログを作った！</title>
       <link>https://hidegonsan.github.io/blog/posts/blog-with-hugo/</link>
