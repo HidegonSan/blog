@@ -1,10 +1,10 @@
 ---
-draft: true
+draft: false
 
 date: "2023-02-21T16:32:11+09:00"
 # url: ""
 
-title: "【効率UP】拡張機能 'Refined Github' のご紹介！"
+title: "【効率UP】拡張機能 'Refined GitHub' のご紹介！"
 description: ""
 keywords: ""
 
