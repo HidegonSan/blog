@@ -81,6 +81,13 @@ CTRPFの中でも大きく分けて2種類あります。
 #### plg世代
 
 その他の `.plg` 形式のプラグインと同じようにNTRを通して読み込みます。  
+
+> **追記: みなとさんより情報をいただきました！**  
+> Luma 3GX Loader 以前に Luma Plugin Loader が存在していた  
+> Luma Plugin Loader の最初期は `.3gx` ではなく `.plg` を読み込んでいた  
+> 読み込めるのはLoaderに対応しているCTRPFだけ  
+> Lumaから読み込む .plg 形式のCTRPFもあったようです！👀
+
 配置場所は `/plugin/[TID]/plugin.plg` です。  
 多分SELECT式と併用できた気がします。  
 ただし、CTRPFとは併用できなかった気がします。  
