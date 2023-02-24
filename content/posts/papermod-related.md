@@ -62,7 +62,7 @@ PaperModに用意されていないかと調べていたらこんなものを見
 `themes/PaperMod/layouts/_default/single.html` を `layouts/_default/single.html` にコピーしてください。  
 コピーしたら38行目に
 
-```html
+```html{linenostart=38}
 <footer class="post-footer">
 ```
 
