@@ -11,7 +11,35 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <copyright>&amp;copy; 2023 Hidegon.</copyright><atom:link href="https://hidegonsan.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; 2023 Hidegon.</copyright>
+    <lastBuildDate>Sat, 25 Feb 2023 00:01:11 +0900</lastBuildDate><atom:link href="https://hidegonsan.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>https://hidegonsan.github.io/blog/tags/hugo/</link>
+      <pubDate>Sat, 25 Feb 2023 00:01:11 +0900</pubDate>
+      
+      <guid>https://hidegonsan.github.io/blog/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PaperMod</title>
+      <link>https://hidegonsan.github.io/blog/tags/papermod/</link>
+      <pubDate>Sat, 25 Feb 2023 00:01:11 +0900</pubDate>
+      
+      <guid>https://hidegonsan.github.io/blog/tags/papermod/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ブログ</title>
+      <link>https://hidegonsan.github.io/blog/tags/%E3%83%96%E3%83%AD%E3%82%B0/</link>
+      <pubDate>Sat, 25 Feb 2023 00:01:11 +0900</pubDate>
+      
+      <guid>https://hidegonsan.github.io/blog/tags/%E3%83%96%E3%83%AD%E3%82%B0/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>3ds</title>
       <link>https://hidegonsan.github.io/blog/tags/3ds/</link>
@@ -54,33 +82,6 @@
       <pubDate>Tue, 21 Feb 2023 16:32:11 +0900</pubDate>
       
       <guid>https://hidegonsan.github.io/blog/tags/%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://hidegonsan.github.io/blog/tags/hugo/</link>
-      <pubDate>Sun, 19 Feb 2023 18:37:54 +0900</pubDate>
-      
-      <guid>https://hidegonsan.github.io/blog/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PaperMod</title>
-      <link>https://hidegonsan.github.io/blog/tags/papermod/</link>
-      <pubDate>Sun, 19 Feb 2023 18:37:54 +0900</pubDate>
-      
-      <guid>https://hidegonsan.github.io/blog/tags/papermod/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ブログ</title>
-      <link>https://hidegonsan.github.io/blog/tags/%E3%83%96%E3%83%AD%E3%82%B0/</link>
-      <pubDate>Sun, 19 Feb 2023 18:37:54 +0900</pubDate>
-      
-      <guid>https://hidegonsan.github.io/blog/tags/%E3%83%96%E3%83%AD%E3%82%B0/</guid>
       <description></description>
     </item>
     

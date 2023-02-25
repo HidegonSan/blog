@@ -12,7 +12,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <copyright>&amp;copy; 2023 Hidegon.</copyright>
-    <lastBuildDate>Sun, 19 Feb 2023 18:37:54 +0900</lastBuildDate><atom:link href="https://hidegonsan.github.io/blog/tags/%E3%83%96%E3%83%AD%E3%82%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Feb 2023 00:01:11 +0900</lastBuildDate><atom:link href="https://hidegonsan.github.io/blog/tags/%E3%83%96%E3%83%AD%E3%82%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【簡単】PaperModでページネーションをカスタムする方法！</title>
+      <link>https://hidegonsan.github.io/blog/posts/papermod-custom-pagination/</link>
+      <pubDate>Sat, 25 Feb 2023 00:01:11 +0900</pubDate>
+      
+      <guid>https://hidegonsan.github.io/blog/posts/papermod-custom-pagination/</guid>
+      <description>この記事ではPaperModでページネーションをカスタム、数字をつける方法について解説します！ このブログではテーマに PaperMod を使用しています。 説明</description>
+    </item>
+    
     <item>
       <title>【簡単】PaperModで関連コンテンツを表示する方法を解説！</title>
       <link>https://hidegonsan.github.io/blog/posts/papermod-related/</link>
