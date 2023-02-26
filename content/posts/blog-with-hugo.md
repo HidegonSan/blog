@@ -62,8 +62,8 @@ PaperModはオススメのテーマですが、いくつか気に入らないと
 これについても別の記事で書きたいと思います。  
 
 > 関連記事の表示方法を解説しました！  
-> **[【簡単】PaperModで関連コンテンツを表示する方法を解説！](/posts/papermod-related/)**  
-> **[【簡単】PaperModでページネーションをカスタムする方法！](/posts/papermod-custom-pagination/)**  
+> **[PaperModで関連コンテンツを表示する方法！](/posts/papermod-related/)**  
+> **[PaperModでページネーションをカスタムする方法！](/posts/papermod-custom-pagination/)**  
 > もぜひ確認してください！
 
 詳しい作り方は他のサイトが解説してくれているのでここでは書きません。  

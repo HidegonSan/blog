@@ -4,7 +4,7 @@ draft: false
 date: "2023-02-25T00:01:11+09:00"
 # url: ""
 
-title: "【簡単】PaperModでページネーションをカスタムする方法！"
+title: "PaperModでページネーションをカスタムする方法！"
 description: ""
 keywords: ""
 
