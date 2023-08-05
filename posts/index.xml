@@ -12,7 +12,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <copyright>&amp;copy; 2023 Hidegon.</copyright>
-    <lastBuildDate>Thu, 02 Mar 2023 23:54:47 +0900</lastBuildDate><atom:link href="https://hidegonsan.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Aug 2023 11:11:09 +0900</lastBuildDate><atom:link href="https://hidegonsan.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GIGABYTEのマザーボードのBIOSをアップデートした</title>
+      <link>https://hidegonsan.github.io/blog/posts/gigabyte_bios_update/</link>
+      <pubDate>Sat, 05 Aug 2023 11:11:09 +0900</pubDate>
+      
+      <guid>https://hidegonsan.github.io/blog/posts/gigabyte_bios_update/</guid>
+      <description>こんにちは、Hidegonです。久々のブログ更新です。(サボってました) タイトルのままなのですがGIGABYTEのマザーボードのBIOSをア</description>
+    </item>
+    
     <item>
       <title>SearXNGのすゝめ</title>
       <link>https://hidegonsan.github.io/blog/posts/use-searxng/</link>
