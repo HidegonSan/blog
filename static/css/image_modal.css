@@ -1,0 +1,73 @@
+/* Magnific Image Pop-Up Modal for Hugo | Thanks: https://gist.github.com/zjeaton/0cdd7e4bed9d292ab6f3d76b0369f16d */
+
+/* The markdown image container */
+.image_modal_md_image {
+    cursor: pointer;
+}
+
+/* The Modal (background) */
+.image_modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 4em;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.image_modal_content {
+    position: relative;
+    background-color: black;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1400px;
+}
+
+.image_modal_picture {
+    display: flex;
+    align-content: center;
+    cursor: pointer;
+    max-width: 100%;
+    max-height: 80vh;
+    margin: auto;
+}
+
+/* The Close Button */
+/* Optimized for accessibility by using a button named close but 
+    shifting the close text out of the button and only showing x */
+.image_modal_close {
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    font-size: 2em;
+    font-weight: bold;
+    height: 1em;
+    width: 1em;
+    text-indent: 10em;
+    overflow: hidden;
+    border: 0;
+}
+
+.image_modal_close::after {
+    position: absolute;
+    line-height: 0.5;
+    top: 0.2em;
+    left: 0.1em;
+    text-indent: 0;
+    content: "\00D7"
+}
+
+.modal_close:hover,
+.modal_close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
