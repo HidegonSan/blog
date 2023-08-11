@@ -35,7 +35,7 @@ ShowBreadCrumbs: false
 
 ## 個人情報
 
-個人情報については、[プライバシーポリシー](/privacy/)をご覧ください。  
+個人情報については、[プライバシーポリシー](/pages/privacy-policy/)をご覧ください。  
 
 ## 著作権
 
