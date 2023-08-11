@@ -200,5 +200,5 @@ services:
 
 markup:
   goldmark:
-   renderer:
+    renderer:
       unsafe: false

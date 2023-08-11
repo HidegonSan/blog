@@ -16,13 +16,13 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: black;
+    background-color: var(--theme);
 }
 
 /* Modal Content */
 .image_modal_content {
     position: relative;
-    background-color: black;
+    background-color: var(--theme);
     margin: auto;
     padding: 0;
     width: 90%;
@@ -33,17 +33,19 @@
     display: flex;
     align-content: center;
     cursor: pointer;
-    max-width: 100%;
+    max-width: 100%; /* => 90% */
     max-height: 80vh;
     margin: auto;
+    width: 100%;
+    height: 100%;
 }
 
 /* The Close Button */
 /* Optimized for accessibility by using a button named close but 
     shifting the close text out of the button and only showing x */
 .image_modal_close {
-    color: white;
-    background-color: black;
+    color: var(--content);
+    background-color: var(--theme);
     position: absolute;
     top: .5em;
     right: .5em;

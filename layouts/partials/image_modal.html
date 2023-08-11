@@ -7,19 +7,25 @@
 <!-- Modal will open upon clicking the image. Modal will close with clicking the x or image. -->
 
 <!-- The Modal -->
-<div id="image_modal" class="image_modal">
+<div id="image_modal" class="image_modal" onclick="close_image_modal()">
     <button class="image_modal_close" onclick="close_image_modal()">close</button>
-    <div class="image_modal_content">
-      <img class="image_modal_picture" id="image_modal_picture" onclick="close_image_modal()">
+    <div class="image_modal_content" onclick="close_image_modal()">
+        <img class="image_modal_picture" id="image_modal_picture" onclick="open_image_raw(this)">
     </div>
 </div>
 
-<script>
+<script type="text/javascript">
+
+    function open_image_raw(target) {
+        close_image_modal();
+        // window.open(target.src, "_blank")
+    }
+
     // Open the Modal
     function open_image_modal(target_id) {
         var src = document.getElementById(target_id).src;
         if (src.includes("#")) {
-            src = src.substring(0, src.indexOf( "#" ));
+            src = src.substring(0, src.indexOf("#"));
         };
         document.getElementById("image_modal_picture").src = src;
         document.getElementById("image_modal").style.display = "block";
@@ -28,8 +34,8 @@
         // document.getElementById("site-footer").style.display = "hidden";
 
         // 目次とページトップ非表示
-        document.getElementsByClassName("toc")[0].style.display = "none";
-        document.getElementById("top-link").style.display = "none";
+        if (document.getElementsByClassName("toc").length) { document.getElementsByClassName("toc")[0].style.display = "none"; }
+        if (document.getElementById("top-link").length)    { document.getElementById("top-link").style.display = "none"; }
     }
 
 
@@ -42,7 +48,8 @@
         // document.getElementById("site-footer").style.display = "block";
 
         // 目次とページトップ表示
-        document.getElementsByClassName("toc")[0].style.display = "block";
-        document.getElementById("top-link").style.display = "block";
+        if (document.getElementsByClassName("toc").length) { document.getElementsByClassName("toc")[0].style.display = "block"; }
+        if (document.getElementById("top-link").length)    { document.getElementById("top-link").style.display = "block"; }
     }
+
 </script>
