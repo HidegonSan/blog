@@ -12,5 +12,5 @@
 
 
 <div class="image_modal_md_image">
-    <img id="{{ first 6 (shuffle (seq 1 500)) }}" src="{{ .Destination | safeURL }}" onclick="open_image_modal(this.id)" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
+    <img loading="lazy" id="{{ first 6 (shuffle (seq 1 500)) }}" src="{{ .Destination | safeURL }}" onclick="open_image_modal(this.id)" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
 </div>
