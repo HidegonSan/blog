@@ -46,6 +46,7 @@
 /* Optimized for accessibility by using a button named close but 
     shifting the close text out of the button and only showing x */
 .image_modal_close {
+    z-index: 2;
     color: var(--content);
     background-color: var(--theme);
     position: absolute;
