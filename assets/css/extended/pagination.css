@@ -1,0 +1,39 @@
+/* ページネーション カスタム CSS */
+
+/* ページネーションを書き換える PaperModのページネーションがベース */
+/* ul */
+.pagination-default {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* li */
+.pagination-default > .page-item {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+/* テキスト */
+.pagination-default > .page-item a {
+    display: block;
+    color: var(--theme);
+    font-size: 16px;
+    line-height: 36px;
+    background: var(--primary);
+    border-radius: calc(36px / 2);
+    padding: 0; /* 0 15px 0 15px だったけどスマホじゃ改行されるから0にした */
+    margin-left: 5%;
+    width: 90%;
+}
+
+/* 現在のページ */
+.pagination-default > .active > a{
+    background: var(--secondary);
+}
+
+/* ホバー */
+.pagination-default > li:not(.active) > a:hover {
+    background: var(--content);
+}

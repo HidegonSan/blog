@@ -1,0 +1,9 @@
+/* 目次固定 CSS */
+
+.toc {
+    position: sticky;
+    top: 0.2rem;
+    z-index: 100;
+    user-select: none;
+    padding: 0.15em;
+}
