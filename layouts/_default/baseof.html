@@ -24,7 +24,11 @@
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
 
     <!-- instant.page | Thanks: https://instant.page/ -->
-    <script src="/js/instantpage.min.js" type="module"></script>
+    {{ with resources.Get "js/instantpage.min.js" | js.Build }}
+        <script>
+            {{ .Content | safeJS }}
+        </script>
+    {{ end }}
 
 </body>
 
