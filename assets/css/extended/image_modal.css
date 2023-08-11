@@ -70,9 +70,9 @@
     content: "\00D7"
 }
 
-.modal_close:hover,
-.modal_close:focus {
-    color: #999;
+.image_modal_close:hover,
+.image_modal_close:focus {
+    color: var(--primary);
     text-decoration: none;
     cursor: pointer;
 }
