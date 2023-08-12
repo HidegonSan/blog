@@ -1,9 +1,19 @@
-# ブログ
+---
+draft: false
 
-**[https://hidegonsan.github.io/blog/](https://hidegonsan.github.io/blog/)**
+date: "2023-02-19T14:00:00+09:00"
 
-## 謝辞
+title: "♡Thanks♡"
+description: ""
+keywords: ""
 
+tags: []
+categories: []
+
+showToc: false
+searchHidden: true
+ShowBreadCrumbs: false
+---
 
 **Hugo**: [https://gohugo.io/](https://gohugo.io/)  
 **PaperMod**: [https://github.com/adityatelange/hugo-PaperMod/](https://github.com/adityatelange/hugo-PaperMod/)  
@@ -11,6 +21,7 @@
 
 **GitHub Pages**: [https://pages.github.com/](https://pages.github.com/)  
 **Google Analytics**: [https://marketingplatform.google.com/about/analytics/](https://marketingplatform.google.com/about/analytics/)  
+
 
 以下、知恵をお借りしたサイト (順不同)  
 

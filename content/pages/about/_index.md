@@ -29,6 +29,7 @@ ShowBreadCrumbs: false
 [アーカイブ](/archives/)  
 [検索](/search/)  
 
-[ツール一覧](/pages/tools/)
+[ツール一覧](/pages/tools/)  
 
+[Thanks](/pages/thanks/)  
 [GitHubレポジトリ](https://github.com/HidegonSan/blog/)  
