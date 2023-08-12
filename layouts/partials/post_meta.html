@@ -1,4 +1,4 @@
-{{/* {{- $scratch := newScratch }}
+{{- $scratch := newScratch }}
 
 {{- if not .Date.IsZero -}}
 {{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default "January 2, 2006" site.Params.DateFormat)))) }}
@@ -12,13 +12,15 @@
 {{- $scratch.Add "meta" (slice (i18n "words" .WordCount | default (printf "%d words" .WordCount))) }}
 {{- end }}
 
+{{- if not (.Param "hideAuthor") -}}
 {{- with (partial "author.html" .) }}
 {{- $scratch.Add "meta" (slice .) }}
+{{- end }}
 {{- end }}
 
 {{- with ($scratch.Get "meta") }}
 {{- delimit . "&nbsp;·&nbsp;" -}}
-{{- end -}} */}}
+{{- end -}}
 
 
 {{/*  公開日関連 | Thanks: https://aloha-ru.com/hugo/hugo-dateupdate/  */}}

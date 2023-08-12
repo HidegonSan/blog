@@ -51,6 +51,7 @@ params:
   env: "production"
   ShowReadingTime: false
   ShowShareButtons: false
+  hideAuthor: true
   ShowRelatedContent: true
   ShowToc: true
   TocOpen: false
