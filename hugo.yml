@@ -21,6 +21,8 @@ disableHugoGeneratorInject: true
 enableRobotsTXT: true
 googleAnalytics: "G-13NX4L943B"
 
+enableGitInfo: true
+
 minify:
   disableXML: true
   minifyOutput: true
@@ -31,8 +33,11 @@ taxonomies:
   tag: "tags"
 
 
-frontMatter:
-  lastMod: ":fileModTime"
+# Thanks: https://shunyaueta.com/posts/2021-10-06/
+frontmatter:
+  lastmod:
+    - lastmod
+    - :git
 
 
 params:
