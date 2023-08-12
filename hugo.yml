@@ -31,8 +31,8 @@ taxonomies:
   tag: "tags"
 
 
-# frontMatter:
-#   lastMod: ":fileModTime"
+frontMatter:
+  lastMod: ":fileModTime"
 
 
 params:
