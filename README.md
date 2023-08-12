@@ -23,3 +23,4 @@
 [https://aloha-ru.com/hugo/hugo-dateupdate/](https://aloha-ru.com/hugo/hugo-dateupdate/)  
 [https://k-kaz-git.github.io/](https://k-kaz-git.github.io/)  
 [https://mokuzine.net/tags/hugo/](https://mokuzine.net/tags/hugo/)  
+[https://maku77.github.io/p/xg3n7qa/](https://maku77.github.io/p/xg3n7qa/)

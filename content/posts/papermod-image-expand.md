@@ -49,9 +49,9 @@ Hugo image hover と適当に調べたら
 <!-- attribution appreciated. github: zjeaton web: https://froglegs.co -->
 
 
-<div class="image_modal_md_image">
+<span class="image_modal_md_image">
     <img loading="lazy" id="{{ first 6 (shuffle (seq 1 500)) }}" src="{{ .Destination | safeURL }}" onclick="open_image_modal(this.id)" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
-</div>
+</span>
 ```
 
 これを入力します。  
@@ -80,7 +80,7 @@ Hugo image hover と適当に調べたら
     </div>
 </div>
 
-<script type="text/javascript">
+<script>
 
     // Open the Modal
     function open_image_modal(target_id) {
