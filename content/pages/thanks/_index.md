@@ -22,11 +22,12 @@ ShowBreadCrumbs: false
 **GitHub Pages**: [https://pages.github.com/](https://pages.github.com/)  
 **Google Analytics**: [https://marketingplatform.google.com/about/analytics/](https://marketingplatform.google.com/about/analytics/)  
 
-
 以下、知恵をお借りしたサイト (順不同)  
 
 [https://github.com/adityatelange/hugo-PaperMod/pull/1049](https://github.com/adityatelange/hugo-PaperMod/pull/1049)  
 [https://github.com/adityatelange/hugo-PaperMod/discussions/542](https://github.com/adityatelange/hugo-PaperMod/discussions/542)  
+[https://github.com/adityatelange/hugo-PaperMod/pull/1128/](https://github.com/adityatelange/hugo-PaperMod/pull/1128/)  
+[https://github.com/adityatelange/hugo-PaperMod/pull/1284](https://github.com/adityatelange/hugo-PaperMod/pull/1284)  
 [https://gist.github.com/zjeaton/0cdd7e4bed9d292ab6f3d76b0369f16d](https://gist.github.com/zjeaton/0cdd7e4bed9d292ab6f3d76b0369f16d)  
 [https://compassionate-feynman-1e69e9.netlify.app/modal/](https://compassionate-feynman-1e69e9.netlify.app/modal/)  
 [https://joni.jp/pg/hugo-pagination/](https://joni.jp/pg/hugo-pagination/)  

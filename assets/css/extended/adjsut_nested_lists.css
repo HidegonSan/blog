@@ -1,0 +1,9 @@
+/*
+    fix: Adjust margin-bottom in nested lists
+    Thanks: https://github.com/adityatelange/hugo-PaperMod/pull/1284
+*/
+
+.post-content li ol,
+.post-content li ul {
+    margin-bottom: 0;
+}

@@ -1,0 +1,11 @@
+/* 
+    Add margin top to certain single elements surrounded by code blocks for consistency
+    Thanks: https://github.com/adityatelange/hugo-PaperMod/pull/1128/
+*/
+
+.post-content .highlight + ol,
+.post-content .highlight + p,
+.post-content .highlight + figure,
+.post-content .highlight + ul {
+    margin-top: var(--content-gap)
+}
