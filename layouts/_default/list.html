@@ -89,7 +89,10 @@
 {{- if gt $paginator.TotalPages 1 }}
 <footer class="page-footer">
 
-  {{/*  <nav class="pagination">
+
+{{/*
+  <nav class="pagination">
+
     {{- if $paginator.HasPrev }}
     <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
       «&nbsp;{{ i18n "prev_page" }}&nbsp;
@@ -106,8 +109,10 @@
       {{- end }}&nbsp;»
     </a>
     {{- end }}
-  </nav>  */}}
+  </nav>
+*/}}
 
+  {{/*  Added by Hidegon  */}}
   {{/*  Thanks: https://joni.jp/pg/hugo-pagination/  */}}
   {{- partial "pagination.html" . -}}
 

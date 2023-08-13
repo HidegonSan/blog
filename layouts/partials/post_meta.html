@@ -25,20 +25,5 @@
 */}}
 
 
-{{/*  公開日関連 | Thanks: https://aloha-ru.com/hugo/hugo-dateupdate/  */}}
-{{/*  公開日と更新日を変数に格納する  */}}
-{{ $date := .Date.Format "2006-01-02" }}
-{{ $lastmod := .Lastmod.Format "2006-01-02" }}
-
-{{/*  公開日と更新日が違う場合、両方を表示  */}}
-{{ if and (ne $lastmod $date) }}
-    <time itemprop="datePublished" datetime="{{ .Date }}">公開: {{ .Date.Format "2006-01-02" }}</time>
-    {{- if not .Lastmod.IsZero -}}
-    <time itemprop="dateModified" datetime="{{ .Lastmod }}">&nbsp;|&nbsp;更新: {{ .Lastmod.Format "2006-01-02" }}</time>
-    {{ end }}
-{{/*  公開日と更新日が同じ場合、公開日のみ表示  */}}
-{{ else }}
-    {{- if not .Date.IsZero -}}
-        <time itemprop="datePublished" datetime="{{ .Date }}">公開: {{ .Date.Format "2006-01-02" }}</time>
-    {{ end }}
-{{ end }}
+{{/*  Added by Hidegon  */}}
+{{- partial "extend_post_meta.html" . -}}

@@ -36,9 +36,11 @@
   {{- end }}
 
   <footer class="post-footer">
+
+    {{/*  Added by Hidegon  */}}
     {{/*  Show related posts | Thanks: https://github.com/adityatelange/hugo-PaperMod/pull/1049  */}}
     {{- if (.Param "ShowRelatedContent") }}
-      {{- partial "related.html" . }}
+      {{- partial "related_posts.html" . }}
     {{- end }}
 
     {{- if (.Param "tags")}}
