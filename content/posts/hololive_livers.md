@@ -400,5 +400,5 @@ Twitter: [https://twitter.com/hololive_En](https://twitter.com/hololive_En)
 
 #### Hololive ID Official
 
-YouTube: [htps://www.youtube.com/channel/UCfrWoRGlawPQDQxxeIDRP0Q](htps://www.youtube.com/channel/UCfrWoRGlawPQDQxxeIDRP0Q)  
+YouTube: [https://www.youtube.com/channel/UCfrWoRGlawPQDQxxeIDRP0Q](https://www.youtube.com/channel/UCfrWoRGlawPQDQxxeIDRP0Q)  
 Twitter: [https://twitter.com/hololive_Id](https://twitter.com/hololive_Id)  
