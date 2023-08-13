@@ -13,6 +13,15 @@
     <language>ja-JP</language>
     <copyright>&amp;copy; 2023 Hidegon.</copyright><atom:link href="https://hidegonsan.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>【2023年 8月】ホロライブメンバーの YouTube, Twitter 一覧にまとめてみた！ (JSONダウンロード付き)</title>
+      <link>https://hidegonsan.github.io/blog/posts/hololive_livers/</link>
+      <pubDate>Sun, 13 Aug 2023 18:21:57 +0900</pubDate>
+      
+      <guid>https://hidegonsan.github.io/blog/posts/hololive_livers/</guid>
+      <description>タイトルの通り、2023年 8月 現在のホロライブメンバー (JP, EN, ID) の YouTubeチャンネル と Twitter (現X) アカウント をまとめてみました。 間違いがあっ</description>
+    </item>
+    
+    <item>
       <title>PaperModでクリック時に画像を拡大する</title>
       <link>https://hidegonsan.github.io/blog/posts/papermod-image-expand/</link>
       <pubDate>Sat, 12 Aug 2023 16:20:09 +0900</pubDate>
