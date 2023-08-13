@@ -7,3 +7,8 @@
     user-select: none;
     padding: 0.15em;
 }
+
+.toc .inner {
+    max-height: calc(100vh - 2.8rem);
+    overflow-y: scroll;
+}
