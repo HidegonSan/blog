@@ -5,7 +5,7 @@ date: "2023-02-23T13:55:41+09:00"
 # url: ""
 
 title: "複雑な3DSのプラグイン事情"
-description: ""
+description: "CTRPF、3gx、plg の違いや、3gxのバージョンの違いなどを解説しています。"
 keywords: ""
 
 tags: ["3ds", "CTRPF"]
