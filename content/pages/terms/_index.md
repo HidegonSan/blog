@@ -39,7 +39,7 @@ ShowBreadCrumbs: false
 
 ## 著作権
 
-本サイトのコンテンツは特記がない限り、[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ja)で利用できます。  
+本サイトのコンテンツは特記がない限り、[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ja)で利用できます。  
 コードは特記がない限り、[MIT License](https://opensource.org/license/mit-license-php/)で利用できます。  
 
 ## その他
@@ -52,3 +52,4 @@ ShowBreadCrumbs: false
 ## 履歴
 
 JST 2023年 2月 15日: 制定  
+JST 2023年 8月 17日: 改定  
