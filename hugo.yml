@@ -11,6 +11,7 @@ copyright: "&copy; 2023 Hidegon."
 
 theme: "PaperMod"
 paginate: 10
+summaryLength: 140
 
 defaultContentLanguage: "ja"
 languageCode: "ja-JP"
