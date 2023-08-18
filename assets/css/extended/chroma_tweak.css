@@ -1,0 +1,11 @@
+.post-content pre code {
+    background: var(--code-bg) !important;
+}
+
+.post-content pre code {
+    color: var(--content);
+}
+
+.post-content .highlight:not(table) {
+    background-color: unset !important;
+}
