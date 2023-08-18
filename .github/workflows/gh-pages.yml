@@ -9,6 +9,7 @@ on:
       - "README.md"
     branches:
       - main
+      - gh-pages
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -70,9 +71,6 @@ jobs:
 
   # Deployment job
   deploy:
-    permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
