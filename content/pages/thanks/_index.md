@@ -39,3 +39,4 @@ ShowBreadCrumbs: false
 [https://jessewei.dev/blog/2023/papermod/](https://jessewei.dev/blog/2023/papermod/)  
 [https://github.com/reorx/hugo-PaperModX](https://github.com/reorx/hugo-PaperModX)  
 [https://github.com/Wonderfall/hugo-WonderMod](https://github.com/Wonderfall/hugo-WonderMod)  
+[https://github.com/mylesagray/hugo-BurgerMod](https://github.com/mylesagray/hugo-BurgerMod)  
