@@ -4,7 +4,7 @@ name: Deploy HidegonSan's Blog to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-      paths-ignore:
+    paths-ignore:
       - "LICENSE"
       - "README.md"
     branches:
