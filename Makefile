@@ -8,3 +8,13 @@ chroma:
 
 update:
 	git submodule update --remote --merge
+
+debug-make-posts:
+	for i in `seq 0 1 50`; do\
+		hugo new posts/__test_$$i.md;\
+	done
+
+debug-delete-posts:
+	for i in `seq 0 1 50`; do\
+		rm ./content/posts/__test_$$i.md;\
+	done
