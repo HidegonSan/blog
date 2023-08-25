@@ -123,6 +123,10 @@
             </div>
         </div>
         {{- $currentPage := . }}
+
+        <!--  Added by Hidegon  -->
+        {{/* {{- partial "hamburger_menu.html" . -}} */}}
+
         <ul id="menu">
             {{- range site.Menus.main }}
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
