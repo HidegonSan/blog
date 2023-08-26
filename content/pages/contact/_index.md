@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 
 date: "2023-02-19T14:00:00+09:00"
 
@@ -15,4 +15,4 @@ searchHidden: true
 ShowBreadCrumbs: false
 ---
 
-メールを `info★example.com` に送信してください。(★を@に置き換えてください)
+{{< contact_form >}}{{< /contact_form >}}
