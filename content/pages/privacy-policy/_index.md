@@ -22,14 +22,11 @@ ShowBreadCrumbs: false
 
 ## 個人情報について
 
-本サイトで個人情報の入力を求める場面はありません。  
-仮に取得したとして、取得した個人情報は、必要な用途のみに使用します。
-また、個人情報以外の入力値がサーバに送信されることはありません。  
-ただし、入力値が Cookieに保存されていた場合、サーバに送信されます。([詳細](https://developer.mozilla.org/ja/docs/Web/HTTP/Cookies))  
+本サイトは第三者に個人情報を提供することはありません。  
 
 ## Cookie の使用について
 
-本サイトでは、情報保存、<!-- 広告配信、-->アクセス解析のために Cookie を使用します。  
+本サイトは、情報保存、<!-- 広告配信、-->アクセス解析のために Cookie を使用します。  
 Cookie の使用を望まない場合、ブラウザの設定から Cookie を無効にできます。  
 その場合、Cookie を使用するサービスの動作は保証できません。  
 
@@ -41,7 +38,7 @@ Cookie の使用を望まない場合、ブラウザの設定から Cookie を�
 
 ## アクセス解析について
 
-本サイトでは Google Analytics を利用しています。  
+本サイトは Google Analytics を利用しています。  
 この Google Analytics はデータの収集のために Cookie を利用しており、 Cookie を無効にすることで収集を拒否できます。  
 詳細は[Googleアナリティクス利用規約](https://marketingplatform.google.com/about/analytics/terms/jp/)や[Google プライバシーポリシー](https://policies.google.com/privacy?hl=ja)をご覧ください。  
 
@@ -53,6 +50,11 @@ Cookie の使用を望まない場合、ブラウザの設定から Cookie を�
 Googleアカウントの[広告設定ページ](https://adssettings.google.com/u/0/authenticated)で、最適化された広告を無効にできます。  
 詳細は[Google ポリシーと規約ページ](https://policies.google.com/technologies/ads)をご覧ください。  -->
 
+## お問い合わせフォームについて
+
+本サイトは、[Google Forms](https://www.google.com/intl/ja_jp/forms/about/)を利用して、[お問い合わせフォーム](/pages/contact/)を作成しています。  
+詳細は[Google 利用規約](https://policies.google.com/terms)と[Google ポリシーと規約](https://policies.google.com/privacy)をご覧ください。  
+
 ## その他
 
 本サイト外に移動された場合、本サイトは移動先での一切の責任を負いません。  
@@ -63,3 +65,4 @@ Googleアカウントの[広告設定ページ](https://adssettings.google.com/u
 ## 履歴
 
 JST 2023年 2月 15日: 制定  
+JST 2023年 8月 26日: 改定  
