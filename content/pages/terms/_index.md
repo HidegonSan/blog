@@ -18,7 +18,7 @@ ShowBreadCrumbs: false
 
 ## はじめに
 
-本利用規約 (以下、本規約) は、本サイトと利用者に関わるすべての関係に適用されるものとします。  
+本利用規約 (以下、本規約) は、本サイト ([https://hidegonsan.github.io/blog/](https://hidegonsan.github.io/blog/)以下) と利用者に関わるすべての関係に適用されるものとします。  
 本規約に同意できない場合、本サイトはご利用いただけません。  
 
 ## 禁止事項
@@ -53,3 +53,4 @@ ShowBreadCrumbs: false
 
 JST 2023年 2月 15日: 制定  
 JST 2023年 8月 17日: 改定  
+JST 2023年 8月 26日: 改定  
