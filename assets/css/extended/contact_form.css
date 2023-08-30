@@ -23,8 +23,7 @@
 
 #contact_form_button {
     display: block;
-    margin: auto;
-    margin-top: 2rem;
+    margin: 2.5rem auto;
     border: 1px solid var(--secondary);
     border-radius: var(--radius);
     text-decoration: none;
