@@ -84,7 +84,7 @@ Safari は僕がApple製品を所持していないためわかりません。�
 拡張機能インストール後に表示された紹介ページでオクトキャットの下の  
 `Create and add a Personal Access Token in the extension’s options to ensure every feature works correctly.`  
 の `extension’s options` がクリックできるのでクリックしてください。  
-![APIベースの機能有効化リンクの位置](/img/refined-github/api-feature.png)  
+![APIベースの機能有効化リンクの位置](api-feature.png)  
 
 閉じてしまった人は  
 Chrome: `右上3点マーク > その他のツール > 拡張機能 > Refined GitHub 詳細 > 拡張機能のオプション`  
@@ -94,7 +94,7 @@ Firefox: `右上3本線 > アドオンとテーマ > 拡張機能 > Refined GitH
 すると拡張機能の設定ページが開きます。  
 そこで `🔑 Personal token (optional, generate one)` と書かれているところがあります。  
 `generate one` がクリックできるのでクリックしてください。  
-![🔑 Personal token (optional, generate one)](/img/refined-github/personal-access-token.png)
+![🔑 Personal token (optional, generate one)](personal-access-token.png)  
 
 クリックすると、GitHubに飛び、パスワードを求められます。  
 パスワードを入力すると個人用アクセストークンの生成ページが表示されます。  
@@ -110,7 +110,7 @@ Firefox: `右上3本線 > アドオンとテーマ > 拡張機能 > Refined GitH
 
 **1度しか表示されないのでコピーし忘れないように注意してください。**
 
-![個人用アクセストークン コピー](/img/refined-github/personal-access-token-copy.png)
+![個人用アクセストークン コピー](personal-access-token-copy.png)  
 (ちなみにこのトークンは無効です。)  
 
 コピーしたらさっきの拡張機能の設定ページに戻ります。  

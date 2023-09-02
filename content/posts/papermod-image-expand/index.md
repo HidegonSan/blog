@@ -243,7 +243,7 @@ PaperModに合うよう、目次とページトップを隠すようにコード
 
 適当に画像を配置して試してください。
 
-![sample image (favicon)](/favicons/android-chrome-192x192.png)  
+<!-- ![sample image (favicon)](/favicons/android-chrome-192x192.png)   -->
 
 `うちのファビコン`
 
