@@ -1,5 +1,6 @@
 # Generated files by hugo
 /public/
+# https://gohugo.io/content-management/image-processing/#image-processing-performance-consideration
 /resources/_gen/
 /assets/jsconfig.json
 hugo_stats.json

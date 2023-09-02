@@ -18,3 +18,8 @@ debug-delete-posts:
 	for i in `seq 0 1 50`; do\
 		rm ./content/posts/__test_$$i.md;\
 	done
+
+# Thanks: http://puni56.net/posts/makefile-arg/
+.PHONY: new-%
+new-%:
+	hugo new posts/${@:new-%=%}/index.md
