@@ -1,6 +1,5 @@
 <!-- Magnific Image Pop-Up Modal for Hugo | Thanks: https://gist.github.com/zjeaton/0cdd7e4bed9d292ab6f3d76b0369f16d -->
 
-
 <!-- Images that use the standard image format for markdown will be displayed in a 
   magnific modal popup. Use format ![alt text](/path/to/image.img) -->
 <!-- Place this file in layouts > _default > _markup > render-image.html -->
@@ -10,7 +9,53 @@
   clicked image. -->
 <!-- attribution appreciated. github: zjeaton web: https://froglegs.co -->
 
+<!-- Thanks: https://kakudo.org/blog/auto-image-compression-in-hugo/ -->
+
+{{- $src := ( .Destination | safeURL ) -}}
+{{- if strings.HasPrefix $src "http" -}}
+{{/* remote resources */}}
 
 <span class="image_modal_md_image">
-    <img loading="lazy" id="{{ first 6 (shuffle (seq 1 500)) }}" src="{{ .Destination | safeURL }}" onclick="open_image_modal(this.id)" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
+    <img
+        loading="lazy"
+        id="{{ first 6 (shuffle (seq 1 500)) }}"
+        src="{{ .Destination | safeURL }}"
+        alt="{{ .PlainText }}"
+        {{ with .Title}}
+            title="{{ . }}"
+        {{ end }}
+        onclick="open_image_modal(this.id)"
+    />
 </span>
+
+{{/* end of remote resources */}}
+{{- else -}}
+{{/* local resources */}}
+
+{{ $originalImage := .Page.Resources.GetMatch .Destination }}
+{{ if $originalImage }}
+    {{ $webpImage := $originalImage.Resize (printf "%dx%d webp q75" $originalImage.Width $originalImage.Height) }}
+
+    <span class="image_modal_md_image">
+        <picture>
+            <source srcset="{{ $webpImage.RelPermalink }}" type="image/webp">
+            <img
+                loading="lazy"
+                id="{{ first 6 (shuffle (seq 1 500)) }}"
+                src="{{ .Destination | safeURL }}"
+                alt="{{ .PlainText }}"
+                {{ with .Title }}
+                    title="{{ . }}"
+                {{ end }}
+                onclick="open_image_modal(this.id)"
+            >
+        </picture>
+    </span>
+
+{{- end -}}
+
+{{/* end of local resources*/}}
+{{- end -}}
+
+
+<!-- Cf. https://gohugo.io/content-management/image-processing/ -->
