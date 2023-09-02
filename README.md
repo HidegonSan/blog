@@ -2,7 +2,7 @@
 
 **[https://hidegonsan.github.io/blog/](https://hidegonsan.github.io/blog/)**
 
-## 謝辞
+## Thanks
 
 **Hugo**: [https://gohugo.io/](https://gohugo.io/)  
 **PaperMod**: [https://github.com/adityatelange/hugo-PaperMod/](https://github.com/adityatelange/hugo-PaperMod/)  
@@ -30,3 +30,4 @@
 [https://github.com/reorx/hugo-PaperModX](https://github.com/reorx/hugo-PaperModX)  
 [https://github.com/Wonderfall/hugo-WonderMod](https://github.com/Wonderfall/hugo-WonderMod)  
 [https://github.com/mylesagray/hugo-BurgerMod](https://github.com/mylesagray/hugo-BurgerMod)  
+[https://kakudo.org/blog/auto-image-compression-in-hugo/](https://kakudo.org/blog/auto-image-compression-in-hugo/)  

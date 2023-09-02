@@ -41,3 +41,4 @@ ShowBreadCrumbs: false
 [https://github.com/reorx/hugo-PaperModX](https://github.com/reorx/hugo-PaperModX)  
 [https://github.com/Wonderfall/hugo-WonderMod](https://github.com/Wonderfall/hugo-WonderMod)  
 [https://github.com/mylesagray/hugo-BurgerMod](https://github.com/mylesagray/hugo-BurgerMod)  
+[https://kakudo.org/blog/auto-image-compression-in-hugo/](https://kakudo.org/blog/auto-image-compression-in-hugo/)  
