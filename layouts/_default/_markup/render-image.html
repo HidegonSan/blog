@@ -12,8 +12,8 @@
 <!-- Thanks: https://kakudo.org/blog/auto-image-compression-in-hugo/ -->
 
 {{- $src := ( .Destination | safeURL ) -}}
-{{- if strings.HasPrefix $src "http" -}}
-{{/* remote resources */}}
+{{- if or (strings.HasPrefix $src "http") (strings.HasPrefix $src "/") -}}
+{{/* not page resources */}}
 
 <span class="image_modal_md_image">
     <img
@@ -28,7 +28,7 @@
     />
 </span>
 
-{{/* end of remote resources */}}
+{{/* end of not page resources */}}
 {{- else -}}
 {{/* local resources */}}
 
