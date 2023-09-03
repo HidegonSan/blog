@@ -24,6 +24,7 @@ googleAnalytics: "G-13NX4L943B"
 
 enableGitInfo: true
 
+
 minify:
   disableXML: true
   minifyOutput: true
@@ -36,14 +37,12 @@ taxonomies:
 
 # Thanks: https://shunyaueta.com/posts/2021-10-06/
 frontmatter:
-  lastmod:
-    - lastmod
-    - :git
+  lastmod: ["lastmod", ":git"]
 
 
 params:
   title: "ひでごん"
-  description: "ひでごんのブログ、備忘録です"
+  description: "ひでごんのブログ、備忘録です。がんばって更新します。"
   keywords: ["ひでごん", "改造", "3ds", "CTRPF", "プログラミング"]
   classification: ["computer", "programming", "コンピュータ", "プログラミング", "改造"]
   author: "Hidegon"
@@ -94,20 +93,11 @@ params:
 
   # SNS
   socialIcons:
-    - name: "GitHub"
-      url: "https://github.com/HidegonSan/"
-
-    - name: "GitLab"
-      url: "https://gitlab.com/Hidegon/"
-    
-    - name: "Twitter"
-      url: "https://twitter.com/Hidegon_/"
-    
-    - name: "Discord"
-      url: "https://discord.gg/Mn5EQ7qkDJ/"
-    
-    - name: "YouTube"
-      url: "https://www.youtube.com/@HidegonYT/"
+    [
+      {name: "GitHub", url: "https://github.com/HidegonSan/"},
+      {name: "Twitter", url: "https://twitter.com/Hidegon_/"},
+      {name: "YouTube", url: "https://www.youtube.com/@HidegonYT/"},
+    ]
 
   # 投稿のサムネイル
   cover:
@@ -134,27 +124,38 @@ params:
 
 
 menu:
-  main:
-    - identifier: "about"
-      name: "About"
-      url: "pages/about/"
+  main: [
+    {
+      identifier: "about",
+      name: "About",
+      url: "pages/about/",
       weight: 1
-    - identifier: "tools"
-      name: "Tools"
-      url: "pages/tools/"
+    },
+    {
+      identifier: "tools",
+      name: "Tools",
+      url: "pages/tools/",
       weight: 2
-    - identifier: "posts"
-      name: "Posts"
-      url: "posts/"
+    },
+    {
+      identifier: "posts",
+      name: "Posts",
+      url: "posts/",
       weight: 3
-    - identifier: "tags"
-      name: "Tags"
-      url: "tags/"
+    },
+    {
+      identifier: "tags",
+      name: "Tags",
+      url: "tags/",
       weight: 4
-    - identifier: "search"
-      name: " 🔍"
-      url: "search/"
+    },
+    {
+      identifier: "search",
+      name: " 🔍",
+      url: "search/",
       weight: 5
+    }
+  ]
 
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
@@ -162,48 +163,45 @@ pygmentsUseClasses: true
 
 
 markup:
-    highlight:
-        # anchorLineNos: true
-        codeFences: true
-        guessSyntax: true
-        lineNos: true
-        noClasses: false
-        # style: "monokai" # https://xyproto.github.io/splash/docs/
+  highlight:
+    # anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    noClasses: false
+    # style: "monokai" # https://xyproto.github.io/splash/docs/
 
 
 # 検索に必要
 outputs:
-  home:
-    - "HTML"
-    - "RSS"
-    - "JSON"
+  home: ["HTML", "RSS", "JSON"]
 
 
 # プライバシ
 privacy:
-    vimeo:
-        disabled: false
-        simple: true
+  vimeo:
+    disabled: false
+    simple: true
 
-    twitter:
-        disabled: false
-        enableDNT: true
-        simple: true
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
 
-    instagram:
-        disabled: false
-        simple: true
+  instagram:
+    disabled: false
+    simple: true
 
-    youtube:
-        disabled: false
-        privacyEnhanced: true
+  youtube:
+    disabled: false
+    privacyEnhanced: true
 
 
 services:
-    instagram:
-        disableInlineCSS: true
-    twitter:
-        disableInlineCSS: true
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
 
 
 markup:
