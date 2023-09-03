@@ -21,7 +21,7 @@
         id="{{ first 6 (shuffle (seq 1 500)) }}"
         src="{{ .Destination | safeURL }}"
         alt="{{ .PlainText }}"
-        {{ with .Title}}
+        {{ with .Title }}
             title="{{ . }}"
         {{ end }}
         onclick="open_image_modal(this.id)"
@@ -54,7 +54,7 @@
 
 {{- end -}}
 
-{{/* end of local resources*/}}
+{{/* end of local resources */}}
 {{- end -}}
 
 

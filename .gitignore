@@ -29,5 +29,6 @@ hugo.linux
 *.vsix
 
 # Personal
-memo.md
-update.sh
+/memo.txt
+/content/posts/__TEST_ARTICLE_FOR_DEBUG
+/content/posts/__test_*
