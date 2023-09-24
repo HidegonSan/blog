@@ -23,7 +23,7 @@ enableRobotsTXT: true
 googleAnalytics: "G-13NX4L943B"
 
 enableGitInfo: true
-
+rssLimit: 20
 
 minify:
   disableXML: true
