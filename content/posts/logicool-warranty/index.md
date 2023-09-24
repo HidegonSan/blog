@@ -8,7 +8,7 @@ title: "Logicoolの保証を使ったときのやつ"
 description: ""
 keywords: ""
 
-tags: ["PC"]
+tags: ["ガジェット"]
 categories: []
 ---
 
