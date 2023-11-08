@@ -33,8 +33,9 @@
 
 {{- $originalImage := .Page.Resources.GetMatch .Destination -}}
 {{- if $originalImage -}}
-    {{ $webpImage := $originalImage.Resize (printf "%dx%d webp q75" $originalImage.Width $originalImage.Height) }}
-
+    {{ $webpImage := $originalImage | images.Filter
+        (images.Process "webp q75")
+    }}
     <span class="image_modal_md_image">
         <picture>
             <source srcset="{{ $webpImage.RelPermalink }}" type="image/webp">
