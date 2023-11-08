@@ -18,13 +18,12 @@
 <span class="image_modal_md_image">
     <img
         loading="lazy"
-        id="{{ first 6 (shuffle (seq 1 500)) }}"
         src="{{ .Destination | safeURL }}"
         alt="{{ .PlainText }}"
         {{ with .Title }}
             title="{{ . }}"
         {{ end }}
-        onclick="open_image_modal(this.id)"
+        onclick="open_image_modal(this)"
     />
 </span>
 
@@ -32,8 +31,8 @@
 {{- else -}}
 {{/* local resources */}}
 
-{{ $originalImage := .Page.Resources.GetMatch .Destination }}
-{{ if $originalImage }}
+{{- $originalImage := .Page.Resources.GetMatch .Destination -}}
+{{- if $originalImage -}}
     {{ $webpImage := $originalImage.Resize (printf "%dx%d webp q75" $originalImage.Width $originalImage.Height) }}
 
     <span class="image_modal_md_image">
@@ -41,16 +40,18 @@
             <source srcset="{{ $webpImage.RelPermalink }}" type="image/webp">
             <img
                 loading="lazy"
-                id="{{ first 6 (shuffle (seq 1 500)) }}"
                 src="{{ .Destination | safeURL }}"
                 alt="{{ .PlainText }}"
                 {{ with .Title }}
                     title="{{ . }}"
-                {{ end }}
-                onclick="open_image_modal(this.id)"
+                {{- end -}}
+                onclick="open_image_modal(this)"
             >
         </picture>
     </span>
+
+{{- else -}}
+    {{ errorf "Unable to get %q as a page resource" .Destination }}
 
 {{- end -}}
 
