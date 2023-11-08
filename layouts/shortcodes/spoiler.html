@@ -1,0 +1,2 @@
+{{/* https://github.com/gohugoio/hugo/issues/9692 */}}
+<span class="spoiler">{{ trim .Inner "\r\n" | .Page.RenderString }}</span>

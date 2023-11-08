@@ -1,0 +1,13 @@
+.spoiler {
+    background-color: var(--secondary);
+    border-radius: 4px;
+    color: var(--secondary);
+    filter: blur(5px);
+}
+
+.spoiler:hover, .spoiler:active {
+    background-color: var(--tertiary);
+    border-radius: 4px;
+    color: var(--content);
+    filter: none;
+}
