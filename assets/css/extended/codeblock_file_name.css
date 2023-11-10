@@ -1,0 +1,15 @@
+.codeblock_file_name {
+    padding: 4px 10px 4px 10px;
+    border-radius: var(--radius) var(--radius) 0 0;
+    background-color: var(--tertiary);
+    font-size: 0.78em;
+    color: var(--content)
+}
+
+.codeblock_file_name + pre > code, .codeblock_file_name + code {
+    border-radius: 0 0 var(--radius) var(--radius) !important;
+}
+
+pre > .codeblock_file_name {
+    margin: 0;
+}
