@@ -41,3 +41,10 @@
 
 {{/*  PWA | Thanks: https://aloha-ru.com/hugo/pwa-hugo/ */}}
 <link rel="manifest" href="/manifest.json">
+
+
+<noscript>
+    {{ with resources.Get "css/chroma_noscript.css" | toCSS | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" rel="preload stylesheet" as="style">
+    {{ end }}
+</noscript>
