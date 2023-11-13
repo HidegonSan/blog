@@ -1,50 +1,7 @@
-{{- if site.Params.classification -}}
-    {{ with site.Params.classification }}
-        <meta name="classification" content="{{- range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">
-    {{ end }}
-{{- end }}
+{{- partial "seo.html" . -}}
 
+{{- partial "anti_adblock.html" . -}}
 
-{{/*  Added for SEO  */}}
-{{- $iso8601 := "2006-01-02T15:04:05-07:00" -}}
-{{ with .PublishDate }}<meta name="creation_date" content="{{ .Format $iso8601 | printf "content=%q" | safeHTMLAttr }}" />{{ end }}
-<meta name="coverage" content="japan" />
-<meta name="content-language" content="ja" />
-<link title="Search" href="{{ absURL "search/" }}" rel="search" />
-<link title="Terms" href="{{ absURL "pages/terms/"}}" rel="copyright" />
-<meta http-equiv="Content-Language" content="ja">
-<meta name="HandheldFriendly" content="true" />
-<meta name="MobileOptimized" content="320">
-<meta name="format-detection" content="telephone=no" />
-<meta name="robots" content="max-image-preview:large">
-<link rel="preconnect dns-prefetch" href="//www.googletagmanager.com">
-<link rel="preconnect dns-prefetch" href="//www.google-analytics.com">
+{{- partial "pwa.html" . -}}
 
-
-{{/*  Anti Ad Block  */}}
-{{/*
-<script>
-    if(true)!function(){fetch("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js").then().catch(()=>{var d=document;d.open();d.write("<style>body{background:black;user-select:none;color:red;text-align:center;font-weight:bold;font-family:monospace;}</style><p style='font-size:calc(100vw/10);'>AD BLOCKER DETECTED</p><p style='font-size:calc(100vw/12)'>DISABLE YOUR AD BLOCKER</p>");d.close();d.title="AD BLOCKER DETECTED";})}();
-</script>
-*/}}
-{{/*  End of Anti Ad Block  */}}
-
-
-{{/*  PWA | Thanks: https://aloha-ru.com/hugo/pwa-hugo/  */}}
-<script>
-    if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("/blog/sw.js")
-    }
-</script>
-{{/*  End of PWA  */}}
-
-
-{{/*  PWA | Thanks: https://aloha-ru.com/hugo/pwa-hugo/ */}}
-<link rel="manifest" href="/manifest.json">
-
-
-<noscript>
-    {{ with resources.Get "css/chroma_noscript.css" | toCSS | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" rel="preload stylesheet" as="style">
-    {{ end }}
-</noscript>
+{{- partial "chroma_noscript.html" . -}}

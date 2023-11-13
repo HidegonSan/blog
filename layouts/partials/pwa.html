@@ -1,0 +1,9 @@
+{{/*  PWA | Thanks: https://aloha-ru.com/hugo/pwa-hugo/  */}}
+
+<script>
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/blog/sw.js")
+    }
+</script>
+
+<link rel="manifest" href="/manifest.json">

@@ -1,0 +1,24 @@
+{{/*  Added for SEO  */}}
+
+{{- if site.Params.classification -}}
+    {{- with site.Params.classification -}}
+        <meta name="classification" content="{{- range $i, $e := . -}}{{- if $i -}}, {{- end -}}{{- $e -}}{{- end -}}">
+    {{- end -}}
+{{- end }}
+
+{{- $iso8601 := "2006-01-02T15:04:05-07:00" -}}
+{{- with .PublishDate -}}
+    <meta name="creation_date" content="{{- .Format $iso8601 | printf "content=%q" | safeHTMLAttr -}}" />
+{{- end -}}
+
+<meta name="coverage" content="japan" />
+<meta name="content-language" content="ja" />
+<link title="Search" href="{{- absURL "search/" -}}" rel="search" />
+<link title="Terms" href="{{- absURL "pages/terms/" -}}" rel="copyright" />
+<meta http-equiv="Content-Language" content="ja">
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="320">
+<meta name="format-detection" content="telephone=no" />
+<meta name="robots" content="max-image-preview:large">
+<link rel="preconnect dns-prefetch" href="//www.googletagmanager.com">
+<link rel="preconnect dns-prefetch" href="//www.google-analytics.com">

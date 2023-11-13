@@ -1,6 +1,1 @@
-<!-- instant.page | Thanks: https://instant.page/ -->
-{{ with resources.Get "js/instantpage.min.js" | js.Build }}
-    <script>
-        {{ .Content | safeJS }}
-    </script>
-{{ end }}
+{{- partial "instant_page.html" . -}}
