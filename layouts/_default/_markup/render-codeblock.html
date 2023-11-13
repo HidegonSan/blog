@@ -8,26 +8,26 @@ print('Hello, World!')
 
 */}}
 
-{{ $result := transform.HighlightCodeBlock . }}
+{{- $result := transform.HighlightCodeBlock . -}}
 {{/* ファイル名が存在したら */}}
 {{- if $.Attributes.file -}}
     {{/* linenos=(true|table) のとき */}}
     {{- if strings.Contains $result.Wrapped "<div class=\"chroma\">" -}}
         {{/* <div class="chroma"> の前にファイル名の要素を追加する*/}}
-        {{ $file_name_element := print "<div class=\"codeblock_file_name\">" $.Attributes.file "</div><div class=\"chroma\">" }}
-        {{ replace $result.Wrapped "<div class=\"chroma\">" $file_name_element | safeHTML }}
+        {{- $file_name_element := print "<div class=\"codeblock_file_name\">" $.Attributes.file "</div><div class=\"chroma\">" -}}
+        {{- replace $result.Wrapped "<div class=\"chroma\">" $file_name_element | safeHTML -}}
     {{/* chromaハイライトが効いていないとき (登録されていない言語等) */}}
     {{- else if strings.Contains $result.Wrapped "<pre tabindex=\"0\">" -}}
         {{/* <pre の前にファイル名の要素を追加する (ハイライトが無い場合も含む) */}}
-        {{ $file_name_element := print "<pre tabindex=\"0\"><div class=\"codeblock_file_name\">" $.Attributes.file "</div>" }}
-        {{ replace $result.Wrapped "<pre tabindex=\"0\">" $file_name_element | safeHTML }}
+        {{- $file_name_element := print "<pre tabindex=\"0\"><div class=\"codeblock_file_name\">" $.Attributes.file "</div>" -}}
+        {{- replace $result.Wrapped "<pre tabindex=\"0\">" $file_name_element | safeHTML -}}
     {{/* その他 (linenos=(false|inline) のときなど) */}}
     {{- else -}}
         {{/* <pre の前にファイル名の要素を追加する (ハイライトが無い場合も含む) */}}
-        {{ $file_name_element := print "<div class=\"codeblock_file_name\">" $.Attributes.file "</div><pre" }}
-        {{ replace $result.Wrapped "<pre" $file_name_element | safeHTML }}
+        {{- $file_name_element := print "<div class=\"codeblock_file_name\">" $.Attributes.file "</div><pre" -}}
+        {{- replace $result.Wrapped "<pre" $file_name_element | safeHTML -}}
     {{- end -}}
 {{- else -}}
     {{/* ファイル名が無い時 */}}
-    {{ $result.Wrapped }}
+    {{- $result.Wrapped -}}
 {{- end -}}

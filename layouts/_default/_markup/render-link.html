@@ -2,13 +2,13 @@
 {{/*  nofollow?  */}}
 
 <a
-  href="{{ .Destination | safeURL }}"
-  {{ with .Title }}
-    title="{{ . }}"
-  {{ end }}
-  {{ if strings.HasPrefix .Destination "http" }}
-    target="_blank" rel="noopener, noreferrer, nofollow"
-  {{ end }}
+    href="{{- .Destination | safeURL -}}"
+    {{- with .Title -}}
+        title="{{- . -}}"
+    {{- end -}}
+    {{- if strings.HasPrefix .Destination "http" -}}
+        target="_blank" rel="noopener, noreferrer, nofollow"
+    {{- end -}}
 >
-  {{ .Text | safeHTML }}
+    {{- .Text | safeHTML -}}
 </a>

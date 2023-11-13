@@ -1,15 +1,19 @@
-<!-- Magnific Image Pop-Up Modal for Hugo | Thanks: https://gist.github.com/zjeaton/0cdd7e4bed9d292ab6f3d76b0369f16d -->
+{{/*
 
-<!-- Images that use the standard image format for markdown will be displayed in a 
-  magnific modal popup. Use format ![alt text](/path/to/image.img) -->
-<!-- Place this file in layouts > _default > _markup > render-image.html -->
-<!-- Also place the image-modal.css and partial/image-modal.html appropriately. -->
-<!-- Id for the image on the page is set to a random 6 numbers, chosen from 1 to 500 -->
-<!-- Onclick opens the modal, and displays/overlays the the image that has the id for the 
-  clicked image. -->
-<!-- attribution appreciated. github: zjeaton web: https://froglegs.co -->
+Magnific Image Pop-Up Modal for Hugo | Thanks: https://gist.github.com/zjeaton/0cdd7e4bed9d292ab6f3d76b0369f16d
 
-<!-- Thanks: https://kakudo.org/blog/auto-image-compression-in-hugo/ -->
+Images that use the standard image format for markdown will be displayed in a magnific modal popup. Use format ![alt text](/path/to/image.img)
+Place this file in layouts > _default > _markup > render-image.html
+Also place the image-modal.css and partial/image-modal.html appropriately.
+Id for the image on the page is set to a random 6 numbers, chosen from 1 to 500
+Onclick opens the modal, and displays/overlays the the image that has the id for the clicked image.
+attribution appreciated.
+GitHub: zjeaton
+web: https://froglegs.co
+
+Image compression | Thanks: https://kakudo.org/blog/auto-image-compression-in-hugo/
+
+*/}}
 
 {{- $src := ( .Destination | safeURL ) -}}
 {{- if or (strings.HasPrefix $src "http") (strings.HasPrefix $src "/") -}}
@@ -18,11 +22,11 @@
 <span class="image_modal_md_image">
     <img
         loading="lazy"
-        src="{{ .Destination | safeURL }}"
-        alt="{{ .PlainText }}"
-        {{ with .Title }}
-            title="{{ . }}"
-        {{ end }}
+        src="{{- .Destination | safeURL -}}"
+        alt="{{- .PlainText -}}"
+        {{- with .Title -}}
+            title="{{- . -}}"
+        {{- end -}}
         onclick="open_image_modal(this)"
     />
 </span>
@@ -33,18 +37,18 @@
 
 {{- $originalImage := .Page.Resources.GetMatch .Destination -}}
 {{- if $originalImage -}}
-    {{ $webpImage := $originalImage | images.Filter
+    {{- $webpImage := $originalImage | images.Filter
         (images.Process "webp q75")
-    }}
+    -}}
     <span class="image_modal_md_image">
         <picture>
-            <source srcset="{{ $webpImage.RelPermalink }}" type="image/webp">
+            <source srcset="{{- $webpImage.RelPermalink -}}" type="image/webp">
             <img
                 loading="lazy"
-                src="{{ .Destination | safeURL }}"
-                alt="{{ .PlainText }}"
-                {{ with .Title }}
-                    title="{{ . }}"
+                src="{{- .Destination | safeURL -}}"
+                alt="{{- .PlainText -}}"
+                {{- with .Title -}}
+                    title="{{- . -}}"
                 {{- end -}}
                 onclick="open_image_modal(this)"
             >
@@ -52,7 +56,7 @@
     </span>
 
 {{- else -}}
-    {{ errorf "Unable to get %q as a page resource" .Destination }}
+    {{- errorf "Unable to get %q as a page resource" .Destination -}}
 
 {{- end -}}
 

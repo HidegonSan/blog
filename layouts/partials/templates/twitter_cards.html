@@ -33,4 +33,4 @@
 {{ end -}}
 
 {{/*  Added  */}}
-<meta property="twitter:url" content="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}">
+<meta property="twitter:url" content="{{- if .Params.canonicalURL -}} {{- trim .Params.canonicalURL " " -}} {{- else -}} {{- .Permalink -}} {{- end -}}">
