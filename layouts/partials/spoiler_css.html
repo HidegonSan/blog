@@ -1,0 +1,9 @@
+{{/*  spoiler css  */}}
+
+{{ if .HasShortcode "spoiler" }}
+    <style>
+        {{- with resources.Get "css/spoiler.css" | toCSS | minify -}}
+            {{- .Content | safeCSS -}}
+        {{- end -}}
+    </style>
+{{ end }}
