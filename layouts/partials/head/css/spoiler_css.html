@@ -2,7 +2,7 @@
 
 {{ if .HasShortcode "spoiler" }}
     <style>
-        {{- with resources.Get "css/spoiler.css" | toCSS | minify -}}
+        {{- with resources.Get "css/shortcodes/spoiler.css" | toCSS | minify -}}
             {{- .Content | safeCSS -}}
         {{- end -}}
     </style>
