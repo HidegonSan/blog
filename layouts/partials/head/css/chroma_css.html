@@ -1,0 +1,34 @@
+{{/*  chroma css  */}}
+
+{{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search")) -}}
+
+    {{/*  chroma css for noscript  */}}
+    <noscript>
+        {{- with resources.Get "css/chroma/chroma_noscript.css" | toCSS | minify | fingerprint -}}
+            <link href="{{- .RelPermalink -}}" integrity="{{- .Data.Integrity -}}" crossorigin="anonymous" rel="preload stylesheet" as="style">
+        {{- end -}}
+    </noscript>
+
+    {{/*  bundle chroma css  */}}
+    {{- $chroma_dark            := (resources.Get "css/chroma/chroma_dark.css") -}}
+    {{- $chroma_light           := (resources.Get "css/chroma/chroma_light.css") -}}
+    {{- $chroma_reset           := (resources.Get "css/chroma/chroma_reset.css") -}}
+    {{- $chroma_tweak           := (resources.Get "css/chroma/chroma_tweak.css") -}}
+    {{- $codeblock_file_name    := (resources.Get "css/chroma/codeblock_file_name.css") -}}
+
+    {{- $chroma_css := (
+        slice
+            $chroma_dark
+            $chroma_light
+            $chroma_reset
+            $chroma_tweak
+            $codeblock_file_name
+        )
+        | resources.Concat "assets/css/chroma/chroma_all.css"
+    -}}
+
+    {{- with $chroma_css | toCSS | minify | fingerprint -}}
+        <link href="{{- .RelPermalink -}}" integrity="{{- .Data.Integrity -}}" crossorigin="anonymous" rel="preload stylesheet" as="style">
+    {{- end -}}
+
+{{- end -}}
