@@ -98,6 +98,6 @@ for light_color in light_colors:
 chroma_noscript_output += """}
 """
 
-# chroma_vars.css の書き込み
+# chroma_noscript.css の書き込み
 with open("./assets/css/chroma/chroma_noscript.css", "w+") as fw:
     fw.write(chroma_noscript_output)
