@@ -2,10 +2,10 @@ server:
 	hugo server -D --disableFastRender --ignoreCache
 
 chroma:
-	hugo gen chromastyles --style=monokai > ./assets/css/extended/chroma_dark.css
-	hugo gen chromastyles --style=monokailight > ./assets/css/extended/chroma_light.css
-	sed -i 's/.chroma/.dark .chroma/g' ./assets/css/extended/chroma_dark.css
-	python chroma_reset.py
+	hugo gen chromastyles --style=monokai > ./assets/css/chroma/chroma_dark.css
+	hugo gen chromastyles --style=monokailight > ./assets/css/chroma/chroma_light.css
+	sed -i 's/.chroma/.dark .chroma/g' ./assets/css/chroma/chroma_dark.css
+	python chroma.py
 
 update:
 	git submodule update --remote --merge

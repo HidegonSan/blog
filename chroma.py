@@ -4,7 +4,7 @@ light_color_unset = []
 light_colors = []
 
 # ダークテーマ用CSSを読み込み、色が設定されていないクラスを探し出す
-with open("./assets/css/extended/chroma_dark.css", "r") as file_dark:
+with open("./assets/css/chroma/chroma_dark.css", "r") as file_dark:
     for line_dark in file_dark.readlines():
         name = line_dark.split("*/")[0][3:].strip()
         tmp = line_dark.split(".dark .chroma ")
@@ -25,7 +25,7 @@ with open("./assets/css/extended/chroma_dark.css", "r") as file_dark:
                 dark_colors.append([class_name[1:], color])
 
 # ライトテーマ用CSSを読み込み、色が設定されていないクラスを探し出す
-with open("./assets/css/extended/chroma_light.css", "r") as file_light:
+with open("./assets/css/chroma/chroma_light.css", "r") as file_light:
     for line_light in file_light.readlines():
         name = line_light.split("*/")[0][3:].strip()
         tmp = line_light.split(".chroma ")
@@ -69,7 +69,7 @@ for i in sorted(light_color_unset):
     light_colors.append([i[1][1:], "unset"])
 
 # chroma_reset.css の書き込み
-with open("./assets/css/extended/chroma_reset.css", "w+") as fw:
+with open("./assets/css/chroma/chroma_reset.css", "w+") as fw:
     fw.write(chroma_reset_output)
 
 # chroma_noscript.css 用の説明
@@ -99,5 +99,5 @@ chroma_noscript_output += """}
 """
 
 # chroma_vars.css の書き込み
-with open("./assets/css/chroma_noscript.css", "w+") as fw:
+with open("./assets/css/chroma/chroma_noscript.css", "w+") as fw:
     fw.write(chroma_noscript_output)
