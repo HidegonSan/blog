@@ -17,7 +17,7 @@
             $chroma_tweak
             $codeblock_file_name
         )
-        | resources.Concat "assets/css/chroma/chroma_all.css"
+        | resources.Concat "css/chroma/chroma_all.css"
     -}}
 
     {{- with $chroma_css | toCSS | minify | fingerprint -}}
