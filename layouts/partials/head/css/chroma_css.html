@@ -2,13 +2,6 @@
 
 {{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search")) -}}
 
-    {{/*  chroma css for noscript  */}}
-    <noscript>
-        {{- with resources.Get "css/chroma/chroma_noscript.css" | toCSS | minify | fingerprint -}}
-            <link href="{{- .RelPermalink -}}" integrity="{{- .Data.Integrity -}}" crossorigin="anonymous" rel="preload stylesheet" as="style">
-        {{- end -}}
-    </noscript>
-
     {{/*  bundle chroma css  */}}
     {{- $chroma_dark            := (resources.Get "css/chroma/chroma_dark.css") -}}
     {{- $chroma_light           := (resources.Get "css/chroma/chroma_light.css") -}}
@@ -30,5 +23,12 @@
     {{- with $chroma_css | toCSS | minify | fingerprint -}}
         <link href="{{- .RelPermalink -}}" integrity="{{- .Data.Integrity -}}" crossorigin="anonymous" rel="preload stylesheet" as="style">
     {{- end -}}
+
+    {{/*  chroma css for noscript  */}}
+    <noscript>
+        {{- with resources.Get "css/chroma/chroma_noscript.css" | toCSS | minify | fingerprint -}}
+            <link href="{{- .RelPermalink -}}" integrity="{{- .Data.Integrity -}}" crossorigin="anonymous" rel="preload stylesheet" as="style">
+        {{- end -}}
+    </noscript>
 
 {{- end -}}
