@@ -1,7 +1,5 @@
 {{/*  instant.page | Thanks: https://instant.page/  */}}
 
-{{- with resources.Get "js/instantpage.min.js" | js.Build | minify -}}
-    <script>
-        {{- .Content | safeJS -}}
-    </script>
+{{- with resources.Get "js/instantpage.min.js" | js.Build | minify | fingerprint -}}
+    <script defer crossorigin="anonymous" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
 {{- end -}}
