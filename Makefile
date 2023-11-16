@@ -18,7 +18,7 @@ instantpage:
 	sed -i '1s/^/\n\/\*\n\n/' LICENSE && \
 	echo -e "\n*/" >> LICENSE && \
 	cat LICENSE >> ./instantpage.min.js && \
-	cp ./instantpage.min.js ./../../assets/js/instantpage/instantpage.js && \
+	cp ./instantpage.min.js ./../../assets/js/instantpage.js && \
 	cd ./../../ && \
 	rm -rf ./tmp
 
