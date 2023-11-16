@@ -1,5 +1,5 @@
 {{/*  instant.page | Thanks: https://instant.page/  */}}
 
 {{- with resources.Get "js/instantpage.js" | fingerprint -}}
-    <script defer crossorigin="anonymous" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+    <script defer crossorigin="anonymous" src="{{- .RelPermalink -}}" integrity="{{- .Data.Integrity -}}"></script>
 {{- end -}}

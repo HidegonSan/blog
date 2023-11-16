@@ -1,9 +1,9 @@
 {{/*  contact form css  */}}
 
-{{ if .HasShortcode "contact_form" }}
+{{- if .HasShortcode "contact_form" -}}
     <style>
         {{- with resources.Get "css/shortcodes/contact_form.css" | toCSS | minify -}}
             {{- .Content | safeCSS -}}
         {{- end -}}
     </style>
-{{ end }}
+{{- end -}}

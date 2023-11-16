@@ -1,10 +1,10 @@
 ---
 draft: true
 
-date: "{{ .Date }}"
+date: "{{- .Date -}}"
 # url: ""
 
-title: "{{ replace .Name "-" " " | title }}"
+title: "{{- replace .Name "-" " " | title -}}"
 description: ""
 keywords: ""
 

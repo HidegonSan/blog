@@ -1,11 +1,11 @@
 User-agent: *
-{{- if hugo.IsProduction | or (eq site.Params.env "production") }}
+{{- if hugo.IsProduction | or (eq site.Params.env "production") -}}
 Disallow:
-{{- else }}
+{{- else -}}
 Disallow: /
-{{- end }}
+{{- end -}}
 
 Disallow: /blog/search/
 Disallow: /blog/404.html
 
-Sitemap: {{ "sitemap.xml" | absURL }}
+Sitemap: {{- "sitemap.xml" | absURL -}}
