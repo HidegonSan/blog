@@ -10,6 +10,18 @@ chroma:
 update:
 	git submodule update --remote --merge
 
+instantpage:
+	git clone git@github.com:instantpage/instant.page.git tmp/instant.page && \
+	cd ./tmp/instant.page && \
+	npm install uglify-js && \
+	npx --yes uglifyjs ./instantpage.js --compress --mangle --toplevel --output ./instantpage.min.js && \
+	sed -i '1s/^/\n\/\*\n\n/' LICENSE && \
+	echo -e "\n*/" >> LICENSE && \
+	cat LICENSE >> ./instantpage.min.js && \
+	cp ./instantpage.min.js ./../../assets/js/instantpage/instantpage.js && \
+	cd ./../../ && \
+	rm -rf ./tmp
+
 debug-make-posts:
 	for i in `seq 0 1 50`; do\
 		hugo new posts/__test_$$i.md;\
