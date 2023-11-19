@@ -20,7 +20,7 @@ enableEmoji: true
 
 disableHugoGeneratorInject: true
 enableRobotsTXT: true
-googleAnalytics: "G-13NX4L943B"
+# googleAnalytics: "G-13NX4L943B"
 
 enableGitInfo: true
 rssLimit: 20
