@@ -10,7 +10,7 @@ chroma:
 	sed -i 's/.chroma/.dark .chroma/g' ./assets/css/chroma/chroma_dark.css
 	python chroma.py
 
-papermod:
+submodule:
 	git submodule update --remote --merge
 
 instantpage:
@@ -25,7 +25,7 @@ instantpage:
 	cd ./../../ && \
 	rm -rf ./tmp
 
-update: papermod instantpage
+update: submodule instantpage
 
 debug-make-posts:
 	for i in `seq 0 1 50`; do\
