@@ -1,0 +1,16 @@
+<code style="position: relative;">
+    {{- with .Get 0 -}}
+        {{- . | safeHTML -}}
+    {{- end -}}
+    <span
+        class="sc_color sc_color_m"
+        style="
+            background-color:
+                {{- with .Get 0 -}}
+                    {{- . | safeCSS -}}
+                {{- end -}}
+            ;
+        "
+    ></span>
+    <span class="sc_color"></span>
+</code>

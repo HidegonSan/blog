@@ -1,0 +1,9 @@
+{{/*  color css  */}}
+
+{{- if .HasShortcode "color" -}}
+    <style>
+        {{- with resources.Get "css/shortcodes/color.css" | toCSS | minify -}}
+            {{- .Content | safeCSS -}}
+        {{- end -}}
+    </style>
+{{- end -}}

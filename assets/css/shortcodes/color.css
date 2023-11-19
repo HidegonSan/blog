@@ -1,0 +1,14 @@
+/* 色本体 + position: absolute 時の親要素拡大用要素 */
+.sc_color {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+
+}
+
+/* 色本体 */
+.sc_color_m {
+    position: absolute;
+    top: calc(50% - 0.5rem);
+    margin-left: 0.33rem;
+}
