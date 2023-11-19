@@ -1,3 +1,6 @@
+.PHONY:
+	server chroma papermod instantpage update debug-make-posts debug-delete-posts new-%
+
 server:
 	hugo server -D --disableFastRender --ignoreCache
 
@@ -7,7 +10,7 @@ chroma:
 	sed -i 's/.chroma/.dark .chroma/g' ./assets/css/chroma/chroma_dark.css
 	python chroma.py
 
-update:
+papermod:
 	git submodule update --remote --merge
 
 instantpage:
@@ -22,6 +25,8 @@ instantpage:
 	cd ./../../ && \
 	rm -rf ./tmp
 
+update: papermod instantpage
+
 debug-make-posts:
 	for i in `seq 0 1 50`; do\
 		hugo new posts/__test_$$i.md;\
@@ -33,6 +38,5 @@ debug-delete-posts:
 	done
 
 # Thanks: http://puni56.net/posts/makefile-arg/
-.PHONY: new-%
 new-%:
 	hugo new posts/${@:new-%=%}/index.md
