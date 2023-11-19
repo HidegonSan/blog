@@ -14,7 +14,6 @@ submodule:
 	git submodule update --remote --merge
 
 goatcounter:
-	mkdir tmp && \
 	curl https://gc.zgo.at/count.js -o ./assets/js/goatcounter.js
 
 instantpage:

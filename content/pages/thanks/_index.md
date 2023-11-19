@@ -27,8 +27,11 @@ ShowBreadCrumbs: false
 **GitHub Pages**:  
 [https://pages.github.com/](https://pages.github.com/)  
 
-**Google Analytics**:  
-[https://marketingplatform.google.com/about/analytics/](https://marketingplatform.google.com/about/analytics/)  
+<!-- **Google Analytics**:   -->
+<!-- [https://marketingplatform.google.com/about/analytics/](https://marketingplatform.google.com/about/analytics/)   -->
+
+**GoatCounter**:  
+[https://www.goatcounter.com/](https://www.goatcounter.com/)  
 
 **Google Forms**:  
 [https://www.google.com/intl/ja_jp/forms/about/](https://www.google.com/intl/ja_jp/forms/about/)  
