@@ -13,6 +13,10 @@ chroma:
 submodule:
 	git submodule update --remote --merge
 
+goatcounter:
+	mkdir tmp && \
+	curl https://gc.zgo.at/count.js -o ./assets/js/goatcounter.js
+
 instantpage:
 	git clone git@github.com:instantpage/instant.page.git tmp/instant.page && \
 	cd ./tmp/instant.page && \
