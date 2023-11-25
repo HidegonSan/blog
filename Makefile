@@ -34,7 +34,7 @@ katex:
 	curl -L https://github.com/KaTeX/KaTeX/releases/latest/download/katex.zip -o ./katex.zip && \
 	unzip ./katex.zip && \
 	cd ./katex && \
-	cp ./fonts/* ./../../static/fonts && \
+	cp ./fonts/* ./../../static/assets/css/fonts && \
 	mkdir -p ./../../assets/js/katex/contrib && \
 	mkdir -p ./../../assets/css/katex/ && \
 	cp ./katex.min.js ./../../assets/js/katex/katex.min.js && \
