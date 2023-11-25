@@ -32,3 +32,4 @@ hugo.linux
 /memo.txt
 /content/posts/__TEST_ARTICLE_FOR_DEBUG
 /content/posts/__test_*
+/tmp
