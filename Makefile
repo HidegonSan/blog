@@ -45,7 +45,7 @@ katex:
 	cd ./../../ && \
 	rm -rf ./tmp
 
-update: submodule instantpage katex
+update: submodule goatcounter instantpage katex
 
 debug-make-posts:
 	for i in `seq 0 1 50`; do\
