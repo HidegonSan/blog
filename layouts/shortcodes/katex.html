@@ -1,7 +1,7 @@
 {{- if eq (.Get 0) "display" -}}
-    <p class="katex_sc" data-katex="\displaystyle {{- trim .Inner "\n\r" -}}">{{- trim .Inner "\n\r" -}}</p>
+    <p class="katex_sc" data-katex="\displaystyle {{ trim .Inner "\n\r" -}}">{{- trim .Inner "\n\r" -}}</p>
 {{- else if eq (.Get 0) "inline" -}}
     <span class="katex_sc" data-katex="{{- trim .Inner "\n\r" -}}">{{- trim .Inner "\n\r" -}}</span>
 {{- else -}}
-    <p class="katex_sc" data-katex="\displaystyle {{- trim .Inner "\n\r" -}}">{{- trim .Inner "\n\r" -}}</p>
+    <p class="katex_sc" data-katex="\displaystyle {{ trim .Inner "\n\r" -}}">{{- trim .Inner "\n\r" -}}</p>
 {{- end -}}
