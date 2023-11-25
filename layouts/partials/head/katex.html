@@ -1,0 +1,76 @@
+
+{{- if or (.Params.katex) (.Params.mhchem) -}}
+
+    {{- $katex_license_body     := "/*\nSPDX-License-Identifier: MIT\nLicensed under the MIT license.\nhttps://github.com/KaTeX/KaTeX/blob/main/LICENSE\nhttps://opensource.org/license/mit/\n*/\n" -}}
+    {{- $katex_license_css      := $katex_license_body | resources.FromString "css/katex_license.css" -}}
+    {{- $katex_license_js       := $katex_license_body | resources.FromString "js/katex_license.js" -}}
+
+    {{- with (slice $katex_license_css (resources.Get "css/katex/katex.min.css")) | resources.Concat "assets/css/katex.min.css" | fingerprint -}}
+        <link
+            crossorigin="anonymous"
+            href="{{- .RelPermalink -}}"
+            integrity="{{- .Data.Integrity -}}"
+            rel="stylesheet"
+        >
+    {{- end -}}
+
+    {{- with (slice $katex_license_js (resources.Get "js/katex/katex.min.js")) | resources.Concat "assets/js/katex/katex.min.js" | fingerprint -}}
+        <script
+            defer
+            crossorigin="anonymous"
+            type="module"
+            src="{{- .RelPermalink -}}"
+            integrity="{{- .Data.Integrity -}}"
+        ></script>
+    {{- end -}}
+
+    {{- with (slice $katex_license_js (resources.Get "js/katex/contrib/auto-render.min.js")) | resources.Concat "assets/js/katex/contrib/auto-render.min.js" | fingerprint -}}
+        <script
+            defer
+            crossorigin="anonymous"
+            type="module"
+            src="{{- .RelPermalink -}}"
+            integrity="{{- .Data.Integrity -}}"
+        ></script>
+    {{- end -}}
+
+    {{- with (slice $katex_license_js (resources.Get "js/katex/contrib/copy-tex.min.js")) | resources.Concat "assets/js/katex/contrib/copy-tex.min.js" | fingerprint -}}
+        <script
+            defer
+            crossorigin="anonymous"
+            type="module"
+            src="{{- .RelPermalink -}}"
+            integrity="{{- .Data.Integrity -}}"
+        ></script>
+    {{- end -}}
+
+    {{- if .Params.mhchem -}}
+        {{- with (slice $katex_license_js (resources.Get "js/katex/contrib/mhchem.min.js")) | resources.Concat "assets/js/katex/contrib/mhchem.min.js" | fingerprint -}}
+            <script
+                defer
+                crossorigin="anonymous"
+                type="module"
+                src="{{- .RelPermalink -}}"
+                integrity="{{- .Data.Integrity -}}"
+            ></script>
+        {{- end -}}
+    {{- end -}}
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+                throwOnError : false
+            });
+            document.querySelectorAll(".katex_sc").forEach(function(e) {
+                katex.render(e.getAttribute("data-katex"), e, { throwOnError: false });
+            });
+        });
+    </script>
+
+{{- end -}}

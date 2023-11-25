@@ -21,17 +21,20 @@ ShowBreadCrumbs: false
 **PaperMod**:  
 [https://github.com/adityatelange/hugo-PaperMod/](https://github.com/adityatelange/hugo-PaperMod/)  
 
-**instant.page**:  
-[https://instant.page/](https://instant.page/)  
-
 **GitHub Pages**:  
 [https://pages.github.com/](https://pages.github.com/)  
 
-<!-- **Google Analytics**:   -->
-<!-- [https://marketingplatform.google.com/about/analytics/](https://marketingplatform.google.com/about/analytics/)   -->
-
 **GoatCounter**:  
 [https://www.goatcounter.com/](https://www.goatcounter.com/)  
+
+**instant.page**:  
+[https://instant.page/](https://instant.page/)  
+
+**KaTeX**:  
+[https://katex.org/](https://katex.org/)  
+
+<!-- **Google Analytics**:   -->
+<!-- [https://marketingplatform.google.com/about/analytics/](https://marketingplatform.google.com/about/analytics/)   -->
 
 **Google Forms**:  
 [https://www.google.com/intl/ja_jp/forms/about/](https://www.google.com/intl/ja_jp/forms/about/)  
@@ -58,6 +61,9 @@ Modal Image Pop-up:
 
 Hugoの画像を自動で圧縮する方法:  
 [https://kakudo.org/blog/auto-image-compression-in-hugo/](https://kakudo.org/blog/auto-image-compression-in-hugo/)  
+
+Hugo でエスケープの問題を回避しつつ KaTeX を使う:  
+[https://www.oshikiri.org/posts/use-katex-in-hugo/](https://www.oshikiri.org/posts/use-katex-in-hugo/)  
 
 Overview of Hugo/PaperMod, modifying PaperMod, and comparison to al-folio:  
 [https://jessewei.dev/blog/2023/papermod/](https://jessewei.dev/blog/2023/papermod/)  
