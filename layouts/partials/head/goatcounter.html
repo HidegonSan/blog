@@ -5,7 +5,7 @@
     {{- $goatcounter_license_body   := "// GoatCounter: https://www.goatcounter.com\n// This file (and *only* this file) is released under the ISC license:\n// https://opensource.org/licenses/ISC\n" -}}
     {{- $goatcounter_license        := $goatcounter_license_body | resources.FromString "js/goatcounter_license.js" -}}
     {{- $goatcounter                := (resources.Get "js/goatcounter.js") | minify -}}
-    {{- $goatcounter_bundled        := (slice $goatcounter_license $goatcounter) | resources.Concat "js/goatcounter.js" -}}
+    {{- $goatcounter_bundled        := (slice $goatcounter_license $goatcounter) | resources.Concat "assets/js/goatcounter.min.js" -}}
 
     {{- with $goatcounter_bundled | fingerprint -}}
         <script

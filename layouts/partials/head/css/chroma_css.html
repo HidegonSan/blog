@@ -17,17 +17,28 @@
             $chroma_tweak
             $codeblock_file_name
         )
-        | resources.Concat "css/chroma/chroma_all.css"
+        | resources.Concat "assets/css/chroma/chroma_all.css"
     -}}
 
     {{- with $chroma_css | toCSS | minify | fingerprint -}}
-        <link href="{{- .RelPermalink -}}" integrity="{{- .Data.Integrity -}}" crossorigin="anonymous" rel="preload stylesheet" as="style">
+        <link
+            crossorigin="anonymous"
+            href="{{- .RelPermalink -}}"
+            integrity="{{- .Data.Integrity -}}"
+            rel="preload stylesheet"
+            as="style">
     {{- end -}}
 
     {{/*  chroma css for noscript  */}}
     <noscript>
-        {{- with resources.Get "css/chroma/chroma_noscript.css" | toCSS | minify | fingerprint -}}
-            <link href="{{- .RelPermalink -}}" integrity="{{- .Data.Integrity -}}" crossorigin="anonymous" rel="preload stylesheet" as="style">
+        {{- with slice (resources.Get "css/chroma/chroma_noscript.css") | resources.Concat "assets/css/chroma/chroma_noscript.css" | toCSS | minify | fingerprint -}}
+            <link
+                crossorigin="anonymous"
+                href="{{- .RelPermalink -}}"
+                integrity="{{- .Data.Integrity -}}"
+                rel="preload stylesheet"
+                as="style"
+            >
         {{- end -}}
     </noscript>
 
