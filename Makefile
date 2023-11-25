@@ -28,7 +28,24 @@ instantpage:
 	cd ./../../ && \
 	rm -rf ./tmp
 
-update: submodule instantpage
+katex:
+	mkdir tmp && \
+	cd tmp && \
+	curl -L https://github.com/KaTeX/KaTeX/releases/latest/download/katex.zip -o ./katex.zip && \
+	unzip ./katex.zip && \
+	cd ./katex && \
+	cp ./fonts/* ./../../static/fonts && \
+	mkdir -p ./../../assets/js/katex/contrib && \
+	mkdir -p ./../../assets/css/katex/ && \
+	cp ./katex.min.js ./../../assets/js/katex/katex.min.js && \
+	cp ./contrib/auto-render.min.js ./../../assets/js/katex/contrib/auto-render.min.js && \
+	cp ./contrib/copy-tex.min.js ./../../assets/js/katex/contrib/copy-tex.min.js && \
+	cp ./contrib/mhchem.min.js ./../../assets/js/katex/contrib/mhchem.min.js && \
+	cp ./katex.min.css ./../../assets/css/katex/katex.min.css && \
+	cd ./../../ && \
+	rm -rf ./tmp
+
+update: submodule instantpage katex
 
 debug-make-posts:
 	for i in `seq 0 1 50`; do\
