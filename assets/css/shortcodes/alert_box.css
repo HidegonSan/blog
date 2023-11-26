@@ -1,0 +1,31 @@
+.icon-tabler {
+    width: 2rem;
+    height: 2rem;
+}
+
+.alert_box {
+    margin-bottom: var(--content-gap);
+    background-color: var(--entry);
+    border-radius: var(--radius);
+    padding: 0.5rem;
+}
+
+.alert_box_icon {
+    min-width: auto !important;
+}
+
+.alert_box_icon > p {
+    display: none;
+}
+
+.alert_box_icon svg {
+    vertical-align: middle;
+}
+
+.alert_box table {
+    margin-bottom: auto;
+}
+
+.alert_box td {
+    border-bottom: none !important;
+}

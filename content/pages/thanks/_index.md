@@ -3,7 +3,7 @@ draft: false
 
 date: "2023-02-19T14:00:00+09:00"
 
-title: "♡Thanks♡"
+title: "♡Thanks and Open Source Licenses♡"
 description: ""
 keywords: ""
 
@@ -14,6 +14,9 @@ showToc: false
 searchHidden: true
 ShowBreadCrumbs: false
 ---
+
+<!-- **Google Analytics**:   -->
+<!-- [https://marketingplatform.google.com/about/analytics/](https://marketingplatform.google.com/about/analytics/)   -->
 
 **Hugo**:  
 [https://gohugo.io/](https://gohugo.io/)  
@@ -33,8 +36,8 @@ ShowBreadCrumbs: false
 **KaTeX**:  
 [https://katex.org/](https://katex.org/)  
 
-<!-- **Google Analytics**:   -->
-<!-- [https://marketingplatform.google.com/about/analytics/](https://marketingplatform.google.com/about/analytics/)   -->
+**Tabler Icons**:  
+[https://tabler-icons.io/](https://tabler-icons.io/)  
 
 **Google Forms**:  
 [https://www.google.com/intl/ja_jp/forms/about/](https://www.google.com/intl/ja_jp/forms/about/)  
