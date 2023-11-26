@@ -1,6 +1,7 @@
 {{/*  chroma css  */}}
 
-{{- if .Page.Scratch.Get "hasCodeblock" -}}
+{{/* {{- if .Page.Store.Get "hasCodeblock" -}} */}}
+{{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search")) -}}
 
     {{/*  bundle chroma css  */}}
     {{- $chroma_dark            := (resources.Get "css/chroma/chroma_dark.css") -}}

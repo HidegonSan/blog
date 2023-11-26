@@ -230,12 +230,12 @@ License: MIT
 
 [Mermaid](https://mermaid.js.org/) is a JavaScript based diagramming and charting tool that uses Markdown-inspired text definitions and a renderer to create complex diagrams.  
 
-```mermaid
+{{< mermaid >}}
 sequenceDiagram
     Alice->>John: Hello John, how are you?
     John-->>Alice: Great!
     Alice-)John: See you later!
-```
+{{< /mermaid >}}
 
 License: MIT  
 
