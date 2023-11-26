@@ -1,9 +1,0 @@
-{{/*  mermaid css  */}}
-
-{{- if or (.Page.Store.Get "hasMermaid") (.HasShortcode "mermaid") -}}
-    <style>
-        {{- with resources.Get "css/mermaid/mermaid_tweak.css" | toCSS | minify -}}
-            {{- .Content | safeCSS -}}
-        {{- end -}}
-    </style>
-{{- end -}}

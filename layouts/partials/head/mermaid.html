@@ -19,9 +19,13 @@
             await mermaid.run({
                 querySelector: ".language-mermaid, .mermaid",
                 suppressErrors: true,
-            });
+            })
             document.querySelectorAll(".language-mermaid").forEach(function(e) {
-                e.style.cssText += "background: none !important;"
+                e.style.cssText += "background: none !important; text-align: center;"
+                e.nextElementSibling.style.cssText += "display: none !important;"
+            })
+            document.querySelectorAll(".mermaid").forEach(function(e) {
+                e.style.cssText += "text-align: center;"
             })
         })
     </script>
