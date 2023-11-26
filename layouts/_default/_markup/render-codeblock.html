@@ -31,3 +31,5 @@ print('Hello, World!')
     {{/* ファイル名が無い時 */}}
     {{- $result.Wrapped -}}
 {{- end -}}
+
+{{- .Page.Store.Set "hasCodeblock" true -}}
