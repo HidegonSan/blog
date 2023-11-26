@@ -1,0 +1,29 @@
+{{- if or (.Page.Store.Get "hasMermaid") (.HasShortcode "mermaid") -}}
+
+    {{- $mermaid_license_body     := "/*\nSPDX-License-Identifier: MIT\nLicensed under the MIT license.\nhttps://github.com/mermaid-js/mermaid/blob/develop/LICENSE\nhttps://opensource.org/license/mit/\n*/\n" -}}
+    {{- $mermaid_license_js       := $mermaid_license_body | resources.FromString "js/mermaid_license.js" -}}
+
+    {{- with (slice $mermaid_license_js (resources.Get "js/mermaid.min.js")) | resources.Concat "assets/js/mermaid.min.js" | fingerprint -}}
+        <script
+            defer
+            crossorigin="anonymous"
+            type="module"
+            src="{{- .RelPermalink -}}"
+            integrity="{{- .Data.Integrity -}}"
+        ></script>
+    {{- end -}}
+
+    <script>
+        document.addEventListener("DOMContentLoaded", async function() {
+            mermaid.initialize({ startOnLoad: false })
+            await mermaid.run({
+                querySelector: ".language-mermaid, .mermaid",
+                suppressErrors: true,
+            });
+            document.querySelectorAll(".language-mermaid").forEach(function(e) {
+                e.style.cssText += "background: none !important;"
+            })
+        })
+    </script>
+
+{{- end -}}

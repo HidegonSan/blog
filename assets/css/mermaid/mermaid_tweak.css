@@ -1,0 +1,7 @@
+.language-mermaid + button {
+    display: none !important;
+}
+
+.language-mermaid, .mermaid {
+    text-align: center;
+}

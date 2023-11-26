@@ -45,6 +45,9 @@ katex:
 	cd ./../../ && \
 	rm -rf ./tmp
 
+mermaid:
+	curl https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js -o ./assets/js/mermaid.min.js
+
 update: submodule goatcounter instantpage katex
 
 debug-make-posts:
