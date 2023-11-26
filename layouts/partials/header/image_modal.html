@@ -8,57 +8,60 @@ Modal will open upon clicking the image. Modal will close with clicking the x or
 
 */}}
 
-<div id="image_modal" class="image_modal" onclick="close_image_modal()">
-    <button class="image_modal_close" onclick="close_image_modal()">close</button>
-    <div class="image_modal_content" onclick="close_image_modal()">
-        <picture class="image_modal_picture">
-            <source id="img_modal_source" srcset="" type="image/webp">
-            <img class="image_modal_picture" id="image_modal_picture" src="" alt="" title="" onclick="close_image_modal">
-        </picture>
+{{- if .Page.Store.Get "hasImage" -}}
+    <div id="image_modal" class="image_modal" onclick="close_image_modal()">
+        <button class="image_modal_close" onclick="close_image_modal()">close</button>
+        <div class="image_modal_content" onclick="close_image_modal()">
+            <picture class="image_modal_picture">
+                <source id="img_modal_source" srcset="" type="image/webp">
+                <img class="image_modal_picture" id="image_modal_picture" src="" alt="" title="" onclick="close_image_modal">
+            </picture>
+        </div>
     </div>
-</div>
 
-<script>
+    <script>
 
-    // Open the Modal
-    function open_image_modal(target) {
-        var img_src = target.src
-        var picture_src = ""
-        if (target.parentNode.tagName === "PICTURE") {
-            picture_src = target.parentNode.querySelector("source").srcset
+        // Open the Modal
+        function open_image_modal(target) {
+            var img_src = target.src
+            var picture_src = ""
+            if (target.parentNode.tagName === "PICTURE") {
+                picture_src = target.parentNode.querySelector("source").srcset
+            }
+            if (img_src.includes("#")) {
+                img_src = img_src.substring(0, src.indexOf("#"))
+            }
+            if (picture_src.includes("#")) {
+                picture_src = picture_src.substring(0, src.indexOf("#"))
+            }
+            document.getElementById("image_modal_picture").src = img_src
+            if (picture_src) {
+                document.getElementById("img_modal_source").srcset = picture_src
+            }
+            document.getElementById("image_modal_picture").alt   = target.alt
+            document.getElementById("image_modal_picture").title = target.title
+            document.getElementById("image_modal").style.display = "block"
+
+            // 目次とページトップ非表示
+            if (document.getElementsByClassName("toc").length) { document.getElementsByClassName("toc")[0].style.display = "none" }
+            if (document.getElementById("top-link").length)    { document.getElementById("top-link").style.display       = "none" }
         }
-        if (img_src.includes("#")) {
-            img_src = img_src.substring(0, src.indexOf("#"))
+
+
+        // Close the Modal
+        function close_image_modal() { 
+            // prevents flashing last modal image while new id is loading on open
+            document.getElementById("image_modal_picture").src   = ""
+            document.getElementById("img_modal_source").srcset   = ""
+            document.getElementById("image_modal_picture").alt   = ""
+            document.getElementById("image_modal_picture").title = ""
+            document.getElementById("image_modal").style.display = "none"
+
+            // 目次とページトップ表示
+            if (document.getElementsByClassName("toc").length) { document.getElementsByClassName("toc")[0].style.display = "block" }
+            if (document.getElementById("top-link").length)    { document.getElementById("top-link").style.display       = "block" }
         }
-        if (picture_src.includes("#")) {
-            picture_src = picture_src.substring(0, src.indexOf("#"))
-        }
-        document.getElementById("image_modal_picture").src = img_src
-        if (picture_src) {
-            document.getElementById("img_modal_source").srcset = picture_src
-        }
-        document.getElementById("image_modal_picture").alt   = target.alt
-        document.getElementById("image_modal_picture").title = target.title
-        document.getElementById("image_modal").style.display = "block"
 
-        // 目次とページトップ非表示
-        if (document.getElementsByClassName("toc").length) { document.getElementsByClassName("toc")[0].style.display = "none" }
-        if (document.getElementById("top-link").length)    { document.getElementById("top-link").style.display       = "none" }
-    }
+    </script>
 
-
-    // Close the Modal
-    function close_image_modal() { 
-        // prevents flashing last modal image while new id is loading on open
-        document.getElementById("image_modal_picture").src   = ""
-        document.getElementById("img_modal_source").srcset   = ""
-        document.getElementById("image_modal_picture").alt   = ""
-        document.getElementById("image_modal_picture").title = ""
-        document.getElementById("image_modal").style.display = "none"
-
-        // 目次とページトップ表示
-        if (document.getElementsByClassName("toc").length) { document.getElementsByClassName("toc")[0].style.display = "block" }
-        if (document.getElementById("top-link").length)    { document.getElementById("top-link").style.display       = "block" }
-    }
-
-</script>
+{{- end -}}
