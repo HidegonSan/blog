@@ -8,7 +8,7 @@ Modal will open upon clicking the image. Modal will close with clicking the x or
 
 */}}
 
-{{- if .Page.Store.Get "hasImage" -}}
+{{- if .Page.Scratch.Get "hasImage" -}}
     <div id="image_modal" class="image_modal" onclick="close_image_modal()">
         <button class="image_modal_close" onclick="close_image_modal()">close</button>
         <div class="image_modal_content" onclick="close_image_modal()">

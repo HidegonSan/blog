@@ -1,6 +1,6 @@
 {{/*  image modal css  */}}
 
-{{- if .Page.Store.Get "hasImage" -}}
+{{- if .Page.Scratch.Get "hasImage" -}}
     <style>
         {{- with resources.Get "css/custom/image_modal.css" | toCSS | minify -}}
             {{- .Content | safeCSS -}}
