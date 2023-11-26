@@ -1,6 +1,6 @@
 {{/*  image modal css  */}}
 
-{{- if or (.Page.Store.Get "hasPagination") -}}
+{{- if .Page.Store.Get "hasPagination" -}}
     <style>
         {{- with resources.Get "css/custom/pagination.css" | toCSS | minify -}}
             {{- .Content | safeCSS -}}
