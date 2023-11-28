@@ -36,6 +36,9 @@ ShowBreadCrumbs: false
 **KaTeX**:  
 [https://katex.org/](https://katex.org/)  
 
+**Mermaid**:  
+[https://mermaid.js.org/](https://mermaid.js.org/)  
+
 **Tabler Icons**:  
 [https://tabler-icons.io/](https://tabler-icons.io/)  
 
@@ -70,6 +73,9 @@ Hugo でエスケープの問題を回避しつつ KaTeX を使う:
 
 Overview of Hugo/PaperMod, modifying PaperMod, and comparison to al-folio:  
 [https://jessewei.dev/blog/2023/papermod/](https://jessewei.dev/blog/2023/papermod/)  
+
+makeの第二引数をMakefileで扱う:  
+[http://puni56.net/posts/makefile-arg/](http://puni56.net/posts/makefile-arg/)  
 
 オッズに合う - Hugo:  
 [https://joni.jp/categories/hugo/](https://joni.jp/categories/hugo/)  
