@@ -1,10 +1,11 @@
-{{- partialCached "head/goatcounter.html" . -}}
+{{/* misc */}}
 
 {{- partial "head/seo.html" . -}}
 
+{{- partialCached "head/pwa.html" . -}}
+
 {{/* {{- partialCached "head/anti_adblock.html" . -}} */}}
 
-{{- partialCached "head/pwa.html" . -}}
 
 {{/* css */}}
 
@@ -12,8 +13,13 @@
 
 {{- partial "head/css_loader.html" . -}}
 
+
 {{/* libraries */}}
 
 {{- partial "head/katex.html" . -}}
 
 {{- partial "head/mermaid.html" . -}}
+
+{{- partialCached "head/instant_page.html" . -}}
+
+{{- partialCached "head/goatcounter.html" . -}}
