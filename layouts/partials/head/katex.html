@@ -1,5 +1,5 @@
 
-{{- if or (.Params.katex) (.Params.mhchem) -}}
+{{- if or (.Params.katex) (.Params.mhchem) (.HasShortcode "katex") -}}
 
     {{- $katex_license_body     := "/*\nSPDX-License-Identifier: MIT\nLicensed under the MIT license.\nhttps://github.com/KaTeX/KaTeX/blob/main/LICENSE\nhttps://opensource.org/license/mit/\n*/\n" -}}
     {{- $katex_license_css      := $katex_license_body | resources.FromString "css/katex_license.css" -}}
