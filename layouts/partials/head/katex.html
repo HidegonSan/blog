@@ -24,6 +24,18 @@
         ></script>
     {{- end -}}
 
+    {{- if .Params.mhchem -}}
+        {{- with (slice $katex_license_js (resources.Get "js/katex/contrib/mhchem.min.js")) | resources.Concat "assets/js/katex/contrib/mhchem.min.js" | fingerprint -}}
+            <script
+                defer
+                crossorigin="anonymous"
+                type="module"
+                src="{{- .RelPermalink -}}"
+                integrity="{{- .Data.Integrity -}}"
+            ></script>
+        {{- end -}}
+    {{- end -}}
+
     {{- with (slice $katex_license_js (resources.Get "js/katex/contrib/auto-render.min.js")) | resources.Concat "assets/js/katex/contrib/auto-render.min.js" | fingerprint -}}
         <script
             defer
@@ -42,18 +54,6 @@
             src="{{- .RelPermalink -}}"
             integrity="{{- .Data.Integrity -}}"
         ></script>
-    {{- end -}}
-
-    {{- if .Params.mhchem -}}
-        {{- with (slice $katex_license_js (resources.Get "js/katex/contrib/mhchem.min.js")) | resources.Concat "assets/js/katex/contrib/mhchem.min.js" | fingerprint -}}
-            <script
-                defer
-                crossorigin="anonymous"
-                type="module"
-                src="{{- .RelPermalink -}}"
-                integrity="{{- .Data.Integrity -}}"
-            ></script>
-        {{- end -}}
     {{- end -}}
 
     <script>
