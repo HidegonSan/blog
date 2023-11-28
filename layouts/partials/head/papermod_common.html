@@ -1,7 +1,6 @@
 {{/*  init  */}}
 {{- $scroll_to_top_js   := "" | resources.FromString "assets/js/blank.js" -}}
 {{- $theme_toggle_js    := "" | resources.FromString "assets/js/blank.js" -}}
-{{- $copy_button_js     := "" | resources.FromString "assets/js/blank.js" -}}
 
 
 {{/*  main scripts  */}}
@@ -15,20 +14,14 @@
     {{- $theme_toggle_js = resources.Get "js/papermod/theme_toggle.js" -}}
 {{- end }}
 
-{{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (.Param "ShowCodeCopyButtons")) -}}
-    {{- $copy_button_js_raw := resources.Get "js/papermod/copy_button.js" -}}
-    {{- $copy_button_js      = $copy_button_js_raw | resources.ExecuteAsTemplate "assets/js/copy_button_tmp.js" . | js.Build -}}
-{{- end }}
-
 
 {{- $papermod_bundled := (
     slice
         $scroll_position_js
         $scroll_to_top_js
         $theme_toggle_js
-        $copy_button_js
     )
-    | resources.Concat "assets/js/papermod.js"
+    | resources.Concat "assets/js/papermod_common.js"
 -}}
 
 {{- with $papermod_bundled | minify | fingerprint -}}

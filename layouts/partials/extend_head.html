@@ -14,9 +14,11 @@
 {{- partial "head/css_loader.html" . -}}
 
 
-{{/* libraries */}}
+{{/* papermod and libraries */}}
 
-{{- partial "head/papermod_scripts.html" . -}}
+{{- partialCached "head/papermod_common.html" . -}}
+
+{{- partial "head/papermod_copy_code.html" . -}}
 
 {{- partial "head/katex.html" . -}}
 
