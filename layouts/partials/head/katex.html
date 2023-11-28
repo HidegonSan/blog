@@ -1,6 +1,10 @@
 
 {{- if or (.Params.katex) (.Params.mhchem) (.HasShortcode "katex") -}}
 
+    <link crossorigin="anonymous" href={{- "assets/css/fonts/KaTeX_Main-Regular.woff2" | relURL }}  rel="preload" as="font" type="font/woff2">
+    <link crossorigin="anonymous" href={{- "assets/css/fonts/KaTeX_Math-Italic.woff2" | relURL }}   rel="preload" as="font" type="font/woff2">
+    <link crossorigin="anonymous" href={{- "assets/css/fonts/KaTeX_Size2-Regular.woff2" | relURL }} rel="preload" as="font" type="font/woff2" >
+
     {{- $katex_license_body     := "/*\nSPDX-License-Identifier: MIT\nLicensed under the MIT license.\nhttps://github.com/KaTeX/KaTeX/blob/main/LICENSE\nhttps://opensource.org/license/mit/\n*/\n" -}}
     {{- $katex_license_css      := $katex_license_body | resources.FromString "css/katex_license.css" -}}
     {{- $katex_license_js       := $katex_license_body | resources.FromString "js/katex_license.js" -}}
