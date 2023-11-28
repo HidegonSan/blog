@@ -2,7 +2,7 @@
 
 {{- if .HasShortcode "contact_form" -}}
     <style>
-        {{- with resources.Get "css/shortcodes/contact_form.css" | toCSS | minify -}}
+        {{- with resources.Get "css/custom/contact_form.css" | toCSS | minify -}}
             {{- .Content | safeCSS -}}
         {{- end -}}
     </style>

@@ -1,9 +1,0 @@
-{{/*  alert box css  */}}
-
-{{- if .HasShortcode "alert" -}}
-    <style>
-        {{- with resources.Get "css/shortcodes/alert_box.css" | toCSS | minify -}}
-            {{- .Content | safeCSS -}}
-        {{- end -}}
-    </style>
-{{- end -}}
