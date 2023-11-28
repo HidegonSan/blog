@@ -1,3 +1,8 @@
+/* code */
+.sc_color_p {
+    position: relative;
+}
+
 /* 色本体 + position: absolute 時の親要素拡大用要素 */
 .sc_color {
     display: inline-block;

@@ -1,5 +1,5 @@
-<p style="text-align: center;">
-    <video controls preload="auto" style="width: 100%;">
+<p class="sc_media">
+    <video controls preload="auto">
         <source src="{{ .Get 0 | safeHTMLAttr }}" type="video/{{ delimit (last 1 (split (.Get 0) ".")) "" }}" />
     </video>
 </p>

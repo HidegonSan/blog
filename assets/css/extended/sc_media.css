@@ -1,0 +1,7 @@
+.sc_media {
+    text-align: center;
+}
+
+.sc_media > * {
+    width: 95%;
+}
