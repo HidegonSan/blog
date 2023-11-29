@@ -15,15 +15,31 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", async function() {
-            mermaid.initialize({ startOnLoad: false })
+            let mermaid_theme = "default";
+
+            if (localStorage.getItem("pref-theme") === "dark") {
+                mermaid_theme = "dark"
+            } else if (localStorage.getItem("pref-theme") === "light") {
+                mermaid_theme = "default"
+            } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                mermaid_theme = "dark"
+            }
+
+            mermaid.initialize({
+                theme: mermaid_theme,
+                startOnLoad: false
+            })
+
             await mermaid.run({
                 querySelector: ".language-mermaid, .mermaid",
                 suppressErrors: true,
             })
+
             document.querySelectorAll(".language-mermaid").forEach(function(e) {
                 e.style.cssText += "background: none !important; text-align: center;"
                 e.nextElementSibling.style.cssText += "display: none !important;"
             })
+
             document.querySelectorAll(".mermaid").forEach(function(e) {
                 e.style.cssText += "text-align: center;"
             })
