@@ -40,18 +40,19 @@
         {{- end -}}
     {{- end -}}
 
-    {{- -}}
-    {{- with (slice $katex_license_js (resources.Get "js/katex/contrib/auto-render.min.js")) | resources.Concat "assets/js/katex/contrib/auto-render.min.js" | fingerprint -}}
-        <script
-            defer
-            crossorigin="anonymous"
-            type="module"
-            src="{{- .RelPermalink -}}"
-            integrity="{{- .Data.Integrity -}}"
-        ></script>
-    {{- end -}}
+    {{- $auto_render_js := resources.Get "js/katex/contrib/auto-render.min.js" -}}
+    {{- $copy_tex_js    := resources.Get "js/katex/contrib/copy-tex.min.js" -}}
 
-    {{- with (slice $katex_license_js (resources.Get "js/katex/contrib/copy-tex.min.js")) | resources.Concat "assets/js/katex/contrib/copy-tex.min.js" | fingerprint -}}
+    {{- $auto_render_and_copy_tex_js := (
+        slice
+            $katex_license_js
+            $auto_render_js
+            $copy_tex_js
+        )
+        | resources.Concat "assets/js/katex/contrib/auto-render-and-copy-tex.min.js"
+    -}}
+
+    {{- with $auto_render_and_copy_tex_js | fingerprint -}}
         <script
             defer
             crossorigin="anonymous"
