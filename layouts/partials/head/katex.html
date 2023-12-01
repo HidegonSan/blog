@@ -14,7 +14,8 @@
             crossorigin="anonymous"
             href="{{- .RelPermalink -}}"
             integrity="{{- .Data.Integrity -}}"
-            rel="stylesheet"
+            rel="preload stylesheet"
+            as="style"
         >
     {{- end -}}
 
