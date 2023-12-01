@@ -1,8 +1,8 @@
 
 {{- if or (.Params.katex) (.Params.mhchem) (.HasShortcode "katex") -}}
 
-    <link crossorigin="anonymous" href={{- "assets/css/fonts/KaTeX_Main-Regular.woff2" | relURL }}  rel="preload" as="font" type="font/woff2">
-    <link crossorigin="anonymous" href={{- "assets/css/fonts/KaTeX_Math-Italic.woff2" | relURL }}   rel="preload" as="font" type="font/woff2">
+    <link crossorigin="anonymous" href={{- "assets/css/fonts/KaTeX_Main-Regular.woff2" | relURL }} rel="preload" as="font" type="font/woff2">
+    <link crossorigin="anonymous" href={{- "assets/css/fonts/KaTeX_Math-Italic.woff2" | relURL }} rel="preload" as="font" type="font/woff2">
     <link crossorigin="anonymous" href={{- "assets/css/fonts/KaTeX_Size2-Regular.woff2" | relURL }} rel="preload" as="font" type="font/woff2" >
 
     {{- $katex_license_body     := "/*\nSPDX-License-Identifier: MIT\nLicensed under the MIT license.\nhttps://github.com/KaTeX/KaTeX/blob/main/LICENSE\nhttps://opensource.org/license/mit/\n*/\n" -}}
@@ -40,6 +40,7 @@
         {{- end -}}
     {{- end -}}
 
+    {{- -}}
     {{- with (slice $katex_license_js (resources.Get "js/katex/contrib/auto-render.min.js")) | resources.Concat "assets/js/katex/contrib/auto-render.min.js" | fingerprint -}}
         <script
             defer
