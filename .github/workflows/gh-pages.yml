@@ -47,9 +47,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: gh-pages
-          submodules: recursive
-          fetch-depth: 0
+          ref: main
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -57,8 +55,6 @@ jobs:
         run: git submodule update --init --recursive
       - name: Update theme to Latest commit
         run: git submodule update --remote --merge
-      - name: List files
-        run: ls -la
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
