@@ -12,3 +12,9 @@
     max-height: calc(100vh - 2.8rem);
     overflow-y: scroll;
 }
+
+/* ToC fix for this commit: https://github.com/adityatelange/hugo-PaperMod/commit/3bb3cf50858d9cf0865407c035d25bd7aacb0dfc */
+.toc .inner {
+    margin: 0 20px;
+    padding: 10px 20px;
+}
