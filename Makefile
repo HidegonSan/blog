@@ -33,7 +33,7 @@ katex:
 mermaid:
 	curl https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js -o ./assets/js/mermaid.min.js
 
-update: submodule instantpage katex mermaid
+update: submodule katex mermaid
 
 debug-make-posts:
 	for i in `seq 0 1 50`; do\
