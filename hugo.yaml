@@ -10,7 +10,8 @@ author: "Hidegon"
 copyright: "&copy; 2023 Hidegon."
 
 theme: "PaperMod"
-paginate: 10
+pagination:
+  pagerSize: 10
 summaryLength: 140
 
 defaultContentLanguage: "ja"
@@ -170,7 +171,9 @@ markup:
     lineNos: true
     noClasses: false
     # style: "monokai" # https://xyproto.github.io/splash/docs/
-
+  goldmark:
+    renderer:
+      unsafe: false
 
 # 検索に必要
 outputs:
@@ -183,7 +186,7 @@ privacy:
     disabled: false
     simple: true
 
-  twitter:
+  x:
     disabled: false
     enableDNT: true
     simple: true
@@ -200,11 +203,5 @@ privacy:
 services:
   instagram:
     disableInlineCSS: true
-  twitter:
+  x:
     disableInlineCSS: true
-
-
-markup:
-  goldmark:
-    renderer:
-      unsafe: false
