@@ -48,6 +48,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
