@@ -57,6 +57,8 @@ jobs:
         run: git submodule update --init --recursive
       - name: Update theme to Latest commit
         run: git submodule update --remote --merge
+      - name: List files
+        run: ls -la
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
