@@ -1,6 +1,5 @@
 // GoatCounter: https://www.goatcounter.com
-// This file (and *only* this file) is released under the ISC license:
-// https://opensource.org/licenses/ISC
+// This file is released under the ISC license: https://opensource.org/licenses/ISC
 ;(function() {
 	'use strict';
 
@@ -145,14 +144,13 @@
 		var f = goatcounter.filter()
 		if (f)
 			return warn('not counting because of: ' + f)
-
 		var url = goatcounter.url(vars)
 		if (!url)
 			return warn('not counting because path callback returned null')
 
-		if (navigator.sendBeacon)
-			navigator.sendBeacon(url)
-		else {  // Fallback for (very) old browsers.
+		if (!navigator.sendBeacon(url)) {
+			// This mostly fails due to being blocked by CSP; try again with an
+			// image-based fallback.
 			var img = document.createElement('img')
 			img.src = url
 			img.style.position = 'absolute'  // Affect layout less.
