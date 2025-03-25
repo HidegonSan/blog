@@ -13,21 +13,6 @@ chroma:
 submodule:
 	git submodule update --remote --merge
 
-goatcounter:
-	curl https://gc.zgo.at/count.js -o ./assets/js/goatcounter.js
-
-instantpage:
-	git clone git@github.com:instantpage/instant.page.git tmp/instant.page && \
-	cd ./tmp/instant.page && \
-	npm install uglify-js && \
-	npx --yes uglifyjs ./instantpage.js --compress --mangle --toplevel --output ./instantpage.min.js && \
-	sed -i '1s/^/\n\/\*\n\n/' LICENSE && \
-	echo -e "\n*/" >> LICENSE && \
-	cat LICENSE >> ./instantpage.min.js && \
-	cp ./instantpage.min.js ./../../assets/js/instantpage.js && \
-	cd ./../../ && \
-	rm -rf ./tmp
-
 katex:
 	mkdir tmp && \
 	cd tmp && \
