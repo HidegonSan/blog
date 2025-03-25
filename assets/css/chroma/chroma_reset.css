@@ -2,5 +2,22 @@
 /* Unset colors between light/dark */
 
 /* for dark */
+/* Name */ .dark .chroma .n { color: unset; }
+/* NameBuiltin */ .dark .chroma .nb { color: unset; }
+/* NameBuiltinPseudo */ .dark .chroma .bp { color: unset; }
+/* NameEntity */ .dark .chroma .ni { color: unset; }
+/* NameFunctionMagic */ .dark .chroma .fm { color: unset; }
+/* NameLabel */ .dark .chroma .nl { color: unset; }
+/* NameNamespace */ .dark .chroma .nn { color: unset; }
+/* NameProperty */ .dark .chroma .py { color: unset; }
+/* NameVariable */ .dark .chroma .nv { color: unset; }
+/* NameVariableClass */ .dark .chroma .vc { color: unset; }
+/* NameVariableGlobal */ .dark .chroma .vg { color: unset; }
+/* NameVariableInstance */ .dark .chroma .vi { color: unset; }
+/* NameVariableMagic */ .dark .chroma .vm { color: unset; }
+/* Punctuation */ .dark .chroma .p { color: unset; }
 
 /* for light */
+/* GenericDeleted */ .chroma .gd { color: unset; }
+/* GenericInserted */ .chroma .gi { color: unset; }
+/* GenericSubheading */ .chroma .gu { color: unset; }

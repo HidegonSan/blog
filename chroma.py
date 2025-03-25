@@ -1,3 +1,6 @@
+# resetの上にdark/lightを乗せるイメージ
+# どちらかにしかないと引き継がれてしまうのでresetが必要
+
 dark_color_unset = []
 dark_colors = []
 light_color_unset = []
@@ -12,9 +15,10 @@ with open("./assets/css/chroma/chroma_dark.css", "r") as file_dark:
             class_name = tmp[1].split(" {")[0]
         else:
             continue
-        is_color_unset = line_dark.find("color: ") == -1
+        is_color_unset = line_dark.find("color:") == -1
         if is_color_unset:
             # dark_colors.append([class_name[1:], "unset"])
+            # print("Color unset dark found [name, class_name]:", [name, class_name])
             dark_color_unset.append([name, class_name])
         else:
             # 色が設定されている場合、chroma_vars.css用にクラス名と色を抽出する
@@ -33,15 +37,18 @@ with open("./assets/css/chroma/chroma_light.css", "r") as file_light:
             class_name = tmp[1].split(" {")[0]
         else:
             continue
-        is_color_unset = line_light.find("color: ") == -1
+        is_color_unset = line_light.find("color:") == -1
         if is_color_unset:
+            # print("Color unset light found [name, class_name]:", [name, class_name])
             # light_colors.append([class_name[1:], "unset"])
             if not any([name == i[0] for i in dark_color_unset]):
+                # unique
                 light_color_unset.append([name, class_name])
             else:
+                # 両方unsetの場合は無視？
                 index = [name == i[0] for i in dark_color_unset].index(True)
                 dark_color_unset.pop(index)
-        # 色が設定されている場合、chroma_vars.css用にクラス名と色を抽出する
+        # 色が設定されている場合、chroma_vars.css用にクラス名と色を抽出する <- noscriptのこと？
         else:
             if class_name[0] == ".":
                 values = tmp[1].split(" {")[1]
@@ -72,6 +79,8 @@ for i in sorted(light_color_unset):
 with open("./assets/css/chroma/chroma_reset.css", "w+") as fw:
     fw.write(chroma_reset_output)
 
+
+
 # chroma_noscript.css 用の説明
 chroma_noscript_output = """/* Color definitions for dark/light themes with JavaScript disabled */
 
@@ -92,7 +101,8 @@ chroma_noscript_output += """}
 
 for light_color in light_colors:
     var_name = ".chroma ." + light_color[0]
-    color = light_color[1]
+    color = light_color[1].replace("}", "").replace("\n", "") # adhoc
+    # print(color)
     chroma_noscript_output += "    " + var_name + " { color: " + color + "; }\n"
 
 chroma_noscript_output += """}
