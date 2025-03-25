@@ -21,7 +21,7 @@
 
 {{- $originalImage := .Page.Resources.GetMatch .Destination -}}
 {{- if $originalImage -}}
-    {{- $webpImage := $originalImage | images.Filter(images.Process "webp q75") -}}
+    {{- $webpImage := $originalImage | images.Filter (images.Process "webp q75") -}}
     <picture>
         <source srcset="{{- $webpImage.RelPermalink -}}" type="image/webp">
         <img
