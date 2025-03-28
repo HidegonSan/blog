@@ -15,9 +15,12 @@ searchHidden: true
 ShowBreadCrumbs: false
 ---
 
-ひでごんです  
+ひでごんです >_<  
 
-[Twitter](https://twitter.com/Hidegon_/)  
-[YouTube](https://www.youtube.com/@HidegonYT/)  
-[GitHub](https://github.com/HidegonSan/)  
-[GitLab](https://gitlab.com/Hidegon/)  
+Twitter: [@Hidegon_](https://x.com/Hidegon_/)  
+Twitter: [@Hideg0n](https://x.com/Hideg0n)  
+Discord: hidegon (618766702347288592)  
+GitHub : [HidegonSan](https://github.com/HidegonSan/)  
+GitLab : [Hidegon](https://gitlab.com/Hidegon/)  
+Bluesky: [@hidegon.bsky.social](https://bsky.app/profile/hidegon.bsky.social)  
+YouTube: [@HidegonYT](https://www.youtube.com/@HidegonYT/)  
