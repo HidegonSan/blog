@@ -21,7 +21,6 @@ ShowBreadCrumbs: false
 
 [利用規約](/pages/terms/)  
 [プライバシーポリシー](/pages/privacy-policy/)  
-[お問い合わせ](/pages/contact/)  
 
 [投稿一覧](/posts/)  
 [タグ一覧](/tags/)  
