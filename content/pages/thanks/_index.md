@@ -15,23 +15,17 @@ searchHidden: true
 ShowBreadCrumbs: false
 ---
 
-**Hugo**:  
-[https://gohugo.io/](https://gohugo.io/)  
+[**Hugo**](https://gohugo.io/): [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)  
 
-**PaperMod**:  
-[https://github.com/adityatelange/hugo-PaperMod/](https://github.com/adityatelange/hugo-PaperMod/)  
+[**PaperMod**](https://github.com/adityatelange/hugo-PaperMod/): [MIT License](https://opensource.org/license/mit)  
 
-**GitHub Pages**:  
-[https://pages.github.com/](https://pages.github.com/)  
+[**KaTeX**](https://katex.org/): [MIT License](https://opensource.org/license/mit)  
 
-**KaTeX**:  
-[https://katex.org/](https://katex.org/)  
+[**Mermaid**](https://mermaid.js.org/): [MIT License](https://opensource.org/license/mit)  
 
-**Mermaid**:  
-[https://mermaid.js.org/](https://mermaid.js.org/)  
+[**Tabler Icons**](https://tabler-icons.io/): [MIT License](https://opensource.org/license/mit)  
 
-**Tabler Icons**:  
-[https://tabler-icons.io/](https://tabler-icons.io/)  
+**GitHub Pages**: [https://pages.github.com/](https://pages.github.com/)  
 
 Maybe inspired:
 
