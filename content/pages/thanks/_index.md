@@ -15,9 +15,6 @@ searchHidden: true
 ShowBreadCrumbs: false
 ---
 
-<!-- **Google Analytics**:   -->
-<!-- [https://marketingplatform.google.com/about/analytics/](https://marketingplatform.google.com/about/analytics/)   -->
-
 **Hugo**:  
 [https://gohugo.io/](https://gohugo.io/)  
 
@@ -27,12 +24,6 @@ ShowBreadCrumbs: false
 **GitHub Pages**:  
 [https://pages.github.com/](https://pages.github.com/)  
 
-**GoatCounter**:  
-[https://www.goatcounter.com/](https://www.goatcounter.com/)  
-
-**instant.page**:  
-[https://instant.page/](https://instant.page/)  
-
 **KaTeX**:  
 [https://katex.org/](https://katex.org/)  
 
@@ -41,9 +32,6 @@ ShowBreadCrumbs: false
 
 **Tabler Icons**:  
 [https://tabler-icons.io/](https://tabler-icons.io/)  
-
-**Google Forms**:  
-[https://www.google.com/intl/ja_jp/forms/about/](https://www.google.com/intl/ja_jp/forms/about/)  
 
 Maybe inspired:
 
