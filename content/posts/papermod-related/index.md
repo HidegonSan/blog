@@ -14,7 +14,7 @@ categories: []
 
 この記事ではPaperModで関連コンテンツを表示する方法について解説します！  
 このブログではテーマに[PaperMod](https://github.com/adityatelange/hugo-PaperMod)を使用しています。  
-しかし、PaperModでは関連記事を表示することができません。  
+しかし、PaperModでは関連記事を表示できません。  
 そこで今回はHugoのテンプレート機能を使って関連記事を表示させてみました！
 
 ## やり方

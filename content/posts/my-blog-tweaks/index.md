@@ -114,7 +114,7 @@ Sample:
 
 {{< video "video.mp4" >}}
 
-Video from [my youtube](https://www.youtube.com/watch?v=tM9j3EYcpqE).  
+Video from [my YouTube](https://www.youtube.com/watch?v=tM9j3EYcpqE).  
 Game: Animal Crossing: New Leaf © Nintendo  
 Music: Maritime Memory - Splatoon © Nintendo  
 
@@ -273,9 +273,9 @@ Based on the [Adding a render-link hook](https://github.com/adityatelange/hugo-P
 External links open in a new tab.  
 It works great.  
 
-### File name for codeblock
+### Filename for codeblock
 
-Make file names visible at the above of code blocks.  
+Make filenames visible at the above of code blocks.  
 
 ```python{file=main.py}
 def main():
