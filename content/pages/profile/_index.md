@@ -37,7 +37,8 @@ Zenn: [hidegon](https://zenn.dev/hidegon)
 GitHub: [HidegonSan](https://github.com/HidegonSan/)  
 GitLab: [Hidegon](https://gitlab.com/Hidegon/)  
 Keybase: [Hidegon](https://keybase.io/hidegon)  
-E-Mail: `{echo "aGlkZWdvbgo=" | base64 -d}.kqsu5@slmail.me`  
+EMail: `{echo "aGlkZWdvbgo=" | base64 -d}.kqsu5@slmail.me`  
+picoCTF: [Hidegon](https://play.picoctf.org/users/Hidegon)  
 
 ## PGP
 
