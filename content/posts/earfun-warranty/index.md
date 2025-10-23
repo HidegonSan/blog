@@ -14,7 +14,7 @@ categories: []
 
 愛用していたEarFunの[EarFun Air Pro 3](https://www.myearfun.com/jp/headphones/earfun-air-pro-3-le-audio-anc-true-wireless-earbuds-black)が買って2か月で昇天されたので保証を使いました。  
 たしかAmazonプライムデー + クーポン で 9000円 → 6, 7000 円 にして買ったやつです。  
-耳が良い訳ではないので詳しくレビューできませんが、ノイキャンついてこの価格ならなかなか良いのでは、と。
+耳がよいわけではないので詳しくレビューできませんが、ノイキャンついてこの価格ならなかなかよいのでは、と。
 
 ## 保証を使う
 
@@ -145,5 +145,5 @@ www.myearfun.com/jp
 多分2, 3日で届いたと思います。  
 Logicoolと同じで注文番号だけで交換していただけるの、めちゃくちゃありがたいです。  
 LogicoolはLogicoolアカウント必須というevilさを発揮してきましたが、EarFunはメールのみで良かったです。  
-壊れるのは良くないけど商品自体はGoodです。  
+壊れるのはよくないけど商品自体はGoodです。  
 では。

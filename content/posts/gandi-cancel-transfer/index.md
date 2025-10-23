@@ -36,7 +36,6 @@ I would like to cancel this request.
 
 3日経った頃でしょうか、カスタマーセンターからメールが届きました。  
 
-
 ```text{linenos=false}
 Hello, Thank you for contacting Gandi Customer care.
 We have canceled the order ********* for you.
@@ -51,6 +50,6 @@ Sincerely,
 どうやらキャンセルしてくれたみたいです。  
 ダッシュボードから確認しても履歴はありませんでした。  
 これで無事、銀行振込をキャンセルできました。  
-やっぱりカスタマーセンターが手厚いところは印象が良いですね。  
+やっぱりカスタマーセンターが手厚いところは印象がよいですね。  
 間違えて銀行振込を作成してしまった場合は参考にしてみてください。  
 最後まで読んでいただきありがとうございました。  

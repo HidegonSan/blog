@@ -22,7 +22,7 @@ I use [GitHub Pages](https://pages.github.com/) for the hosting service.
 For the sake of notes and introduction, I write down some of the tweaks I made.  
 At first, the motto was KISS, but the tweaking became bloated before long.  
 The code became bloated, but the output was designed to be lightweight. (No unnecessary CSS loading, etc.).  
-This blog is designed to look correct even if JavaScript is disabled. ( for privacy nerds like me :) )  
+This blog is designed to look correct even if JavaScript is disabled. (for privacy nerds like me!)  
 Also, all scripts are downloaded by Makefile and no CDN is used.  
 The repository for this blog is [https://github.com/HidegonSan/blog/](https://github.com/HidegonSan/blog/).  
 Thanks and Open Source License: [https://hidegonsan.github.io/blog/pages/thanks/](https://hidegonsan.github.io/blog/pages/thanks/)  
