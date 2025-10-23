@@ -15,8 +15,6 @@ searchHidden: true
 ShowBreadCrumbs: false
 ---
 
-このサイトはHidegonが運営している個人ブログです。  
-
 [プロフィール](/pages/profile/)  
 
 [利用規約](/pages/terms/)  
