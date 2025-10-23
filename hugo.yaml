@@ -5,9 +5,9 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-title: "ひでごん"
+title: "Hidegon"
 author: "Hidegon"
-copyright: "&copy; 2023 Hidegon."
+copyright: "&copy; 2025 Hidegon."
 
 theme: "PaperMod"
 pagination:
@@ -42,10 +42,10 @@ frontmatter:
 
 
 params:
-  title: "ひでごん"
-  description: "ひでごんのブログ、備忘録です。がんばって更新します。"
-  keywords: ["ひでごん", "改造", "3ds", "CTRPF", "プログラミング"]
-  classification: ["computer", "programming", "コンピュータ", "プログラミング", "改造"]
+  title: "Hidegon"
+  description: "This blog is not working"
+  keywords: []
+  classification: []
   author: "Hidegon"
   images: ["img/ogp.png"]
   DateFormat: "2006-01-02"
@@ -88,8 +88,8 @@ params:
 
   # ホーム
   homeInfoParams:
-    Title: "ひでごん🏕️"
-    Content: "備忘録です。更新がんばります。"
+    Title: "Hidegon🏕️"
+    Content: "This blog is not working"
 
   # SNS
   socialIcons:
