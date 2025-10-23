@@ -15,8 +15,7 @@ searchHidden: true
 ShowBreadCrumbs: false
 ---
 
-
-ひでごんです。I'm Hidegon.  
+I'm Hidegon.  
 
 ## Social
 
