@@ -88,16 +88,8 @@ params:
 
   # ホーム
   homeInfoParams:
-    Title: "Hidegon🏕️"
+    Title: "🏕️"
     Content: "This blog is not working"
-
-  # SNS
-  socialIcons:
-    [
-      {name: "GitHub", url: "https://github.com/HidegonSan/"},
-      {name: "Twitter", url: "https://twitter.com/Hidegon_/"},
-      {name: "YouTube", url: "https://www.youtube.com/@HidegonYT/"},
-    ]
 
   # 投稿のサムネイル
   cover:
