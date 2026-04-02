@@ -59,8 +59,8 @@ jobs:
         run: git submodule update --remote --merge
       - name: Build with Hugo
         env:
-          HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
+          HUGO_ENVIRONMENT: dev
+          HUGO_ENV: dev
         run: |
           hugo \
             --minify --gc --config hugo.yaml \
