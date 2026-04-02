@@ -53,7 +53,7 @@ params:
   defaultTheme: "auto"
   disableThemeToggle: false
 
-  env: "production"
+  env: "development"
   ShowReadingTime: false
   ShowShareButtons: false
   hideAuthor: true
